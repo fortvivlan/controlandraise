@@ -1,0 +1,221 @@
+<style type="text/css">
+
+body {
+	font-family: 'Vollkorn';
+	text-align: justify;
+	position: fixed;
+	height: 100%;
+}
+h1 {
+	text-align: center;
+	font-family: 'Playfair Display';
+}
+h2 {
+	text-align: center;
+	font-size: medium;
+	font-size: min(1.5vw, 16px);
+	font-family: 'Playfair Display';
+}
+.mainbody {
+	position: fixed;
+	top: 25%;
+	top: max(25%, 150px);
+	left: 0px;
+	right: 0px;
+	bottom: 6%;
+	bottom: max(55px, 6%);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 100px;
+	padding-left: 100px;
+	font-family: 'Vollkorn';
+	font-size: large;
+	font-size: min(2vw, 18px);
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.upperpic {
+	position: fixed;
+	top: 0px; left: 0px; height: 15%; width: 100%;
+	min-height: 100px;
+	background-color: #558fa6;
+}
+.maintitle {
+	position: fixed;
+	top: 0px; left: 0; height: 17%; right: 0;
+	min-height: 80px;
+	font-family: 'Playfair Display';
+	color: white;
+	font-size: 10px;
+	font-size: max(1vw, 10px);
+}
+.langbutton {
+	position: absolute;
+	padding: 5px;
+	right: 1%;
+	bottom: 30%;
+	background-color: white;
+	color: #558fa6;
+	border-radius: 5px 5px 5px 5px;
+}
+.logo {
+	position: fixed;
+	height: 17%;
+	min-height: 80px;
+	left: 10px; top: 10px;
+}
+.logouni {
+	position: fixed;
+	height: 17%;
+	min-height: 80px;
+	right: 10px; top: 10px;
+}
+.stylehead {
+	position: fixed;
+	top: 18%;
+	top: max(18%, 100px);
+	left: 0px;
+	right: 0px;
+	min-height: 40px;
+	background: white;
+	border-bottom: groove;
+	font-family: 'Huxley';
+	font-size: large;
+	font-size: min(1.2vw, 26px);
+}
+.issueslinksright {
+	position: fixed;
+	padding: 5px;
+	top: 25%;
+	top: max(25%, 150px);
+	right: 5px;
+	height: 45px;
+	width: 30%;
+	font-family: 'Huxley';
+	font-size: medium;
+	text-align: right;
+	line-height: 1.5;
+}
+.issueslinksleft {
+	position: fixed;
+	padding: 5px;
+	top: 25%;
+	top: max(25%, 150px);
+	left: 5px;
+	height: 45px;
+	width: 30%;
+	font-family: 'Huxley';
+	font-size: medium;
+	text-align: left;
+	line-height: 1.5;
+}
+.issuestitle {
+	position: fixed;
+	top: 25%;
+	top: max(25%, 150px);
+	left: 35%;
+	right: 35%;
+	font-family: 'Playfair Display';
+	font-size: large;
+	color: #558fa6;
+	text-align: center;
+	vertical-align: top;
+}
+.issuesmaindownload {
+	position: fixed;
+	padding: 5px;
+	top: 28%;
+	top: max(28%, 180px);
+	height: 45px;
+	left: 35%;
+	right: 35%;
+	font-family: 'Huxley';
+	font-size: small;
+	font-size: min(2vw, 16px);
+	text-align: center;
+}
+.mainissues {
+	position: fixed;
+	top: 32%;
+	top: max(32%, 220px);
+	left: 0px;
+	right: 0px;
+	bottom: 6%;
+	bottom: max(55px, 6%);
+	padding: 10px;
+	font-family: 'Vollkorn';
+	font-size: large;
+	font-size: min(2vw, 18px);
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+td {
+	font-size: large;
+	font-size: min(2vw, 18px);
+}
+.address {
+	position: fixed;
+	bottom: 5px;
+	left: 5%;
+	height: 50px;
+	font-family: 'Playfair Display';
+	font-size: small;
+	color: white;
+}
+.bottomliner {
+	position: fixed;
+	bottom: 0px;
+	height: 5%;
+	min-height: 50px;
+	left: 0px;
+	width: 100%;
+	background-color: #558fa6;
+}
+a {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+a:active {
+	color: black;
+}
+a:hover {
+	color: #558fa6;
+}
+
+@font-face {
+	font-family: 'Vollkorn';
+	src: url('vollkorn.eot');
+	src: url('vollkorn.eot?#iefix') format('embedded-opentype'),
+	url("vollkorn.woff") format("woff"),
+	url("vollkorn.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Vollkorn';
+	src: url('alegreya-italic.eot');
+	src: url('alegreya-italic.eot?#iefix') format('embedded-opentype'),
+	url("alegreya-italic.woff") format("woff"),
+	url("alegreya-italic.ttf") format("truetype");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('playfairdisplay.eot');
+	src: url('playfairdisplay.eot?#iefix') format('embedded-opentype'),
+	url("playfairdisplay.woff") format("woff"),
+	url("playfairdisplay.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Huxley';
+	src: url('HUXLEYRB.eot');
+	src: url('HUXLEYRB.eot?#iefix') format('embedded-opentype'),
+	url("HUXLEYRB.woff") format("woff"),
+	url("HUXLEYRB.ttf") format("truetype");
+}
+</style>
