@@ -63,13 +63,13 @@ h2 {
 	position: fixed;
 	height: 17%;
 	min-height: 80px;
-	left: 10px; top: 10px;
+	right: 10px; top: 10px;
 }
 .logouni {
 	position: fixed;
 	height: 17%;
 	min-height: 80px;
-	right: 10px; top: 10px;
+	left: 10px; top: 10px;
 }
 .stylehead {
 	position: fixed;
