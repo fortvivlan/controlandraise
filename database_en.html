@@ -1,0 +1,473 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Questionnaire Database &mdash; Control and Raising in the Languages of Eurasia</title>
+<link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<style>
+.controls {
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #26789e;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input {
+    margin-right: 5px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background: #26789e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1e5f7a;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+#dataTable th {
+    background: #26789e;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#dataTable td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+#dataTable tr:hover {
+    background: #f9f9f9;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #26789e;
+    font-size: 18px;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.stats {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    max-height: 70vh;
+}
+
+.export-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="upperpic">
+</div>
+<div class="maintitle">
+<h1>CONTROL AND RAISING IN THE LANGUAGES OF EURASIA</h1>
+<h2>Pushkin State Russian Language Institute</h2>
+</div>
+<div class="logouni">
+<img src="pictures/girya.png" height="80%">
+</div>
+<div class="logo">
+<img src="pictures/logo_upscale2.png" height="80%">
+</div>
+<div class="stylehead">
+<table width="100%" height="20" background="white">
+<tr><td width="10%" align="center"><a href="index_en.html" title="Back to homepage" style="text-decoration: none"><img src="pictures/blue-home-icon.png" height="32px"></a></td>
+<td width="15%" align="center" valign="top"><a href="participants_en.html" title="Participants" style="font-size: max(1.2vw, 18px); text-decoration: none">PARTICIPANTS</a></td>
+<td width="15%" align="center" valign="top"><a href="form_en.html" title="Questionnaire" style="font-size: max(1.2vw, 18px); text-decoration: none">QUESTIONNAIRE</a></td>
+<td width="15%" align="center" valign="top"><a href="corpora_en.html" title="Materials" style="font-size: max(1.2vw, 18px); text-decoration: none">MATERIALS</a></td>
+<td width="10%" align="center" valign="top"><a href="talks_en.html" title="Talks" style="font-size: max(1.2vw, 18px); text-decoration: none">TALKS</a></td>
+<td width="15%" align="center" valign="top"><a href="publications_en.html" title="Publications" style="font-size: max(1.2vw, 18px); text-decoration: none">PUBLICATIONS</a></td>
+<td width="10%" align="center" valign="top"><a href="links_en.html" title="Contacts" style="font-size: max(1.2vw, 18px); text-decoration: none">CONTACTS</a></td></tr>
+</table>
+</div>
+<div class="mainbody" style="padding: 20px;">
+
+<h2>Questionnaire Responses Database</h2>
+
+<div id="loadingMessage" class="loading">Loading data...</div>
+<div id="errorMessage" class="error" style="display: none;"></div>
+
+<div id="statsSection" class="stats" style="display: none;">
+    <strong>Database Statistics:</strong>
+    <span id="statsText"></span>
+</div>
+
+<div id="controls" class="controls" style="display: none;">
+    
+    <div class="control-group">
+        <label>Select question groups:</label>
+        <div class="checkbox-group" id="groupCheckboxes"></div>
+    </div>
+
+    <div class="control-group">
+        <label>Select languages to display:</label>
+        <div class="checkbox-group" id="languageCheckboxes"></div>
+    </div>
+
+    <div class="button-group">
+        <button onclick="loadData()">Show Data</button>
+        <button onclick="selectAllGroups()">Select All Groups</button>
+        <button onclick="selectAllLanguages()">Select All Languages</button>
+        <button onclick="clearSelection()">Clear Selection</button>
+    </div>
+
+    <div class="export-buttons">
+        <button onclick="exportToCSV()">Export to CSV</button>
+        <button onclick="exportToJSON()">Export to JSON</button>
+    </div>
+</div>
+
+<div id="resultsSection" style="display: none;">
+    <h3>Results (<span id="resultCount">0</span> questions)</h3>
+    <div class="table-wrapper">
+        <table id="dataTable">
+            <thead id="tableHeader"></thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+<div class="bottomliner">
+<div class="langbutton">
+	<a href="database.html" title="Русский" style="font-size: large; text-decoration: none; color: #26789e">RU</a>
+</div>
+</div>
+<div class="address">
+		<p><a href="https://www.pushkin.institute/">Pushkin State Russian Language Institute</a><br>
+		RSF Grant No. 25-18-00222</p>
+
+</div>
+
+<script>
+const API_BASE = 'https://grant-database-api.onrender.com/api';
+let allGroups = [];
+let allLanguages = [];
+let currentData = [];
+
+// Initialize the page
+async function init() {
+    try {
+        // Load statistics
+        const statsResponse = await fetch(`${API_BASE}/stats`);
+        const stats = await statsResponse.json();
+        
+        document.getElementById('statsText').innerHTML = `
+            Total questions: ${stats.total_questions} | 
+            Complete responses: ${stats.complete_responses} | 
+            Available languages: ${stats.available_languages.length}
+        `;
+        document.getElementById('statsSection').style.display = 'block';
+
+        // Load groups
+        const groupsResponse = await fetch(`${API_BASE}/groups`);
+        allGroups = await groupsResponse.json();
+        
+        // Load languages
+        const languagesResponse = await fetch(`${API_BASE}/languages`);
+        const langData = await languagesResponse.json();
+        allLanguages = langData.languages;
+
+        // Create checkboxes
+        createGroupCheckboxes();
+        createLanguageCheckboxes();
+
+        // Show controls
+        document.getElementById('loadingMessage').style.display = 'none';
+        document.getElementById('controls').style.display = 'block';
+
+    } catch (error) {
+        showError('Error loading data: ' + error.message);
+    }
+}
+
+function createGroupCheckboxes() {
+    const container = document.getElementById('groupCheckboxes');
+    container.innerHTML = '';
+    
+    allGroups.forEach(group => {
+        const div = document.createElement('div');
+        div.className = 'checkbox-item';
+        div.innerHTML = `
+            <input type="checkbox" id="group_${group.group_number}" value="${group.group_number}">
+            <label for="group_${group.group_number}">Group ${group.group_number} (${group.question_count} questions)</label>
+        `;
+        container.appendChild(div);
+    });
+}
+
+function createLanguageCheckboxes() {
+    const container = document.getElementById('languageCheckboxes');
+    container.innerHTML = '';
+    
+    // Add question_text first
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'checkbox-item';
+    questionDiv.innerHTML = `
+        <input type="checkbox" id="lang_question_text" value="question_text" checked>
+        <label for="lang_question_text">Question Text</label>
+    `;
+    container.appendChild(questionDiv);
+    
+    // Add language columns
+    allLanguages.forEach(lang => {
+        const div = document.createElement('div');
+        div.className = 'checkbox-item';
+        const displayName = lang.charAt(0).toUpperCase() + lang.slice(1);
+        div.innerHTML = `
+            <input type="checkbox" id="lang_${lang}" value="${lang}" checked>
+            <label for="lang_${lang}">${displayName}</label>
+        `;
+        container.appendChild(div);
+    });
+}
+
+function selectAllGroups() {
+    document.querySelectorAll('[id^="group_"]').forEach(cb => cb.checked = true);
+}
+
+function selectAllLanguages() {
+    document.querySelectorAll('[id^="lang_"]').forEach(cb => cb.checked = true);
+}
+
+function clearSelection() {
+    document.querySelectorAll('[id^="group_"], [id^="lang_"]').forEach(cb => cb.checked = false);
+}
+
+async function loadData() {
+    // Get selected groups
+    const selectedGroups = Array.from(document.querySelectorAll('[id^="group_"]:checked'))
+        .map(cb => cb.value);
+    
+    // Get selected languages
+    const selectedLanguages = Array.from(document.querySelectorAll('[id^="lang_"]:checked'))
+        .map(cb => cb.value);
+
+    if (selectedGroups.length === 0) {
+        showError('Please select at least one question group');
+        return;
+    }
+
+    if (selectedLanguages.length === 0) {
+        showError('Please select at least one language');
+        return;
+    }
+
+    try {
+        document.getElementById('loadingMessage').style.display = 'block';
+        document.getElementById('resultsSection').style.display = 'none';
+        hideError();
+
+        // Fetch data for selected groups
+        const promises = selectedGroups.map(group => 
+            fetch(`${API_BASE}/questions/group/${group}`).then(r => r.json())
+        );
+        
+        const results = await Promise.all(promises);
+        currentData = results.flat();
+
+        // Display data
+        displayTable(currentData, selectedLanguages);
+
+        document.getElementById('loadingMessage').style.display = 'none';
+        document.getElementById('resultsSection').style.display = 'block';
+
+    } catch (error) {
+        showError('Error loading data: ' + error.message);
+        document.getElementById('loadingMessage').style.display = 'none';
+    }
+}
+
+function displayTable(data, selectedLanguages) {
+    const header = document.getElementById('tableHeader');
+    const body = document.getElementById('tableBody');
+    
+    // Clear existing content
+    header.innerHTML = '';
+    body.innerHTML = '';
+
+    // Create header
+    const headerRow = document.createElement('tr');
+    headerRow.innerHTML = '<th>№</th><th>Group</th>';
+    
+    selectedLanguages.forEach(lang => {
+        const displayName = lang === 'question_text' ? 'Question' : 
+                           lang.charAt(0).toUpperCase() + lang.slice(1);
+        headerRow.innerHTML += `<th>${displayName}</th>`;
+    });
+    
+    header.appendChild(headerRow);
+
+    // Create rows
+    data.forEach(question => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${question.question_number}</td>
+            <td>${question.group_number}</td>
+        `;
+        
+        selectedLanguages.forEach(lang => {
+            const value = question[lang] || '';
+            row.innerHTML += `<td>${escapeHtml(value)}</td>`;
+        });
+        
+        body.appendChild(row);
+    });
+
+    document.getElementById('resultCount').textContent = data.length;
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function showError(message) {
+    const errorDiv = document.getElementById('errorMessage');
+    errorDiv.textContent = message;
+    errorDiv.style.display = 'block';
+}
+
+function hideError() {
+    document.getElementById('errorMessage').style.display = 'none';
+}
+
+function exportToCSV() {
+    if (currentData.length === 0) {
+        alert('No data to export. Please load data first.');
+        return;
+    }
+
+    const selectedLanguages = Array.from(document.querySelectorAll('[id^="lang_"]:checked'))
+        .map(cb => cb.value);
+
+    // Create CSV header
+    let csv = 'Number,Group,' + selectedLanguages.map(l => 
+        l === 'question_text' ? 'Question' : l.charAt(0).toUpperCase() + l.slice(1)
+    ).join(',') + '\n';
+
+    // Add data rows
+    currentData.forEach(question => {
+        const row = [
+            question.question_number,
+            question.group_number,
+            ...selectedLanguages.map(lang => {
+                const value = question[lang] || '';
+                return '"' + value.replace(/"/g, '""') + '"';
+            })
+        ];
+        csv += row.join(',') + '\n';
+    });
+
+    // Download
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'questionnaire_data.csv';
+    link.click();
+}
+
+function exportToJSON() {
+    if (currentData.length === 0) {
+        alert('No data to export. Please load data first.');
+        return;
+    }
+
+    const selectedLanguages = Array.from(document.querySelectorAll('[id^="lang_"]:checked'))
+        .map(cb => cb.value);
+
+    // Filter data to only include selected languages
+    const filteredData = currentData.map(question => {
+        const filtered = {
+            question_number: question.question_number,
+            group_number: question.group_number
+        };
+        selectedLanguages.forEach(lang => {
+            filtered[lang] = question[lang];
+        });
+        return filtered;
+    });
+
+    // Download
+    const blob = new Blob([JSON.stringify(filteredData, null, 2)], { type: 'application/json' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'questionnaire_data.json';
+    link.click();
+}
+
+// Initialize on page load
+window.onload = init;
+</script>
+
+</body>
+</html>
