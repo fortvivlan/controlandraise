@@ -208,7 +208,7 @@ button:disabled {
 </div>
 
 <script>
-const API_BASE = 'https://grant-database-api.onrender.com/api';
+const API_BASE = 'https://grant-database.onrender.com/api';
 let allGroups = [];
 let allLanguages = [];
 let currentData = [];
@@ -253,12 +253,18 @@ function createGroupCheckboxes() {
     const container = document.getElementById('groupCheckboxes');
     container.innerHTML = '';
     
-    allGroups.forEach(group => {
+    // Sort groups numerically
+    const sortedGroups = allGroups.sort((a, b) => {
+        return parseInt(a.group_number) - parseInt(b.group_number);
+    });
+    
+    sortedGroups.forEach(group => {
         const div = document.createElement('div');
         div.className = 'checkbox-item';
+        const groupName = group.group_name ? `: ${group.group_name}` : '';
         div.innerHTML = `
             <input type="checkbox" id="group_${group.group_number}" value="${group.group_number}">
-            <label for="group_${group.group_number}">Group ${group.group_number} (${group.question_count} questions)</label>
+            <label for="group_${group.group_number}">Group ${group.group_number}${groupName} (${group.question_count} questions)</label>
         `;
         container.appendChild(div);
     });
@@ -332,7 +338,8 @@ async function loadData() {
         );
         
         const results = await Promise.all(promises);
-        currentData = results.flat();
+        // Extract questions from the new response format {group: {...}, questions: [...]}
+        currentData = results.flatMap(result => result.questions || result);
 
         // Display data
         displayTable(currentData, selectedLanguages);
