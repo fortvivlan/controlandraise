@@ -29,6 +29,20 @@
     margin-top: 10px;
 }
 
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.checkbox-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 15px;
+    margin-top: 10px;
+}
+
 .checkbox-item {
     display: flex;
     align-items: center;
@@ -164,12 +178,12 @@ button:disabled {
     
     <div class="control-group">
         <label>Выберите группы вопросов:</label>
-        <div class="checkbox-group" id="groupCheckboxes"></div>
+        <div class="checkbox-list" id="groupCheckboxes"></div>
     </div>
 
     <div class="control-group">
         <label>Выберите языки для отображения:</label>
-        <div class="checkbox-group" id="languageCheckboxes"></div>
+        <div class="checkbox-table" id="languageCheckboxes"></div>
     </div>
 
     <div class="button-group">
@@ -212,6 +226,21 @@ const API_BASE = 'https://grant-database.onrender.com/api';
 let allGroups = [];
 let allLanguages = [];
 let currentData = [];
+
+// Language name translations (Russian)
+const languageNames = {
+    'question_text': 'Текст вопроса',
+    'russian': 'Русский',
+    'polish': 'Польский',
+    'muira': 'Муиринский',
+    'westcircassian': 'Адыгейский',
+    'danish': 'Датский',
+    'nganasan': 'Нганасанский'
+};
+
+function getLanguageName(lang) {
+    return languageNames[lang.toLowerCase()] || lang.charAt(0).toUpperCase() + lang.slice(1);
+}
 
 // Initialize the page
 async function init() {
@@ -279,15 +308,15 @@ function createLanguageCheckboxes() {
     questionDiv.className = 'checkbox-item';
     questionDiv.innerHTML = `
         <input type="checkbox" id="lang_question_text" value="question_text" checked>
-        <label for="lang_question_text">Текст вопроса</label>
+        <label for="lang_question_text">${getLanguageName('question_text')}</label>
     `;
     container.appendChild(questionDiv);
     
-    // Add language columns
+    // Add language columns with translations
     allLanguages.forEach(lang => {
         const div = document.createElement('div');
         div.className = 'checkbox-item';
-        const displayName = lang.charAt(0).toUpperCase() + lang.slice(1);
+        const displayName = getLanguageName(lang);
         div.innerHTML = `
             <input type="checkbox" id="lang_${lang}" value="${lang}" checked>
             <label for="lang_${lang}">${displayName}</label>
@@ -366,8 +395,7 @@ function displayTable(data, selectedLanguages) {
     headerRow.innerHTML = '<th>№</th><th>Группа</th>';
     
     selectedLanguages.forEach(lang => {
-        const displayName = lang === 'question_text' ? 'Вопрос' : 
-                           lang.charAt(0).toUpperCase() + lang.slice(1);
+        const displayName = getLanguageName(lang);
         headerRow.innerHTML += `<th>${displayName}</th>`;
     });
     
@@ -383,7 +411,8 @@ function displayTable(data, selectedLanguages) {
         
         selectedLanguages.forEach(lang => {
             const value = question[lang] || '';
-            row.innerHTML += `<td>${escapeHtml(value)}</td>`;
+            // Render HTML content directly instead of escaping it
+            row.innerHTML += `<td>${value}</td>`;
         });
         
         body.appendChild(row);
