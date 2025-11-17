@@ -3,6 +3,7 @@
 <title>Questionnaire Database &mdash; Control and Raising in the Languages of Eurasia</title>
 <link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
 <style>
 .controls {
     background: #f5f5f5;
@@ -194,8 +195,7 @@ button:disabled {
     </div>
 
     <div class="export-buttons">
-        <button onclick="exportToCSV()">Export to CSV</button>
-        <button onclick="exportToJSON()">Export to JSON</button>
+        <button onclick="exportToExcel()">Export to Excel (XLSX)</button>
     </div>
 </div>
 
@@ -438,7 +438,7 @@ function hideError() {
     document.getElementById('errorMessage').style.display = 'none';
 }
 
-function exportToCSV() {
+function exportToExcel() {
     if (currentData.length === 0) {
         alert('No data to export. Please load data first.');
         return;
@@ -447,59 +447,44 @@ function exportToCSV() {
     const selectedLanguages = Array.from(document.querySelectorAll('[id^="lang_"]:checked'))
         .map(cb => cb.value);
 
-    // Create CSV header
-    let csv = 'Number,Group,' + selectedLanguages.map(l => 
-        l === 'question_text' ? 'Question' : l.charAt(0).toUpperCase() + l.slice(1)
-    ).join(',') + '\n';
+    // Create header row
+    const headers = ['Number', 'Group', ...selectedLanguages.map(l => getLanguageName(l))];
 
-    // Add data rows
-    currentData.forEach(question => {
-        const row = [
+    // Create data rows
+    const rows = currentData.map(question => {
+        return [
             question.question_number,
             question.group_number,
             ...selectedLanguages.map(lang => {
                 const value = question[lang] || '';
-                return '"' + value.replace(/"/g, '""') + '"';
+                // Strip HTML tags for Excel
+                const div = document.createElement('div');
+                div.innerHTML = value;
+                return div.textContent || div.innerText || '';
             })
         ];
-        csv += row.join(',') + '\n';
     });
 
-    // Download
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'questionnaire_data.csv';
-    link.click();
-}
+    // Combine headers and rows
+    const worksheetData = [headers, ...rows];
 
-function exportToJSON() {
-    if (currentData.length === 0) {
-        alert('No data to export. Please load data first.');
-        return;
-    }
+    // Create workbook and worksheet
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.aoa_to_sheet(worksheetData);
 
-    const selectedLanguages = Array.from(document.querySelectorAll('[id^="lang_"]:checked'))
-        .map(cb => cb.value);
+    // Set column widths
+    const colWidths = [
+        { wch: 10 },  // Question number
+        { wch: 10 },  // Group
+        ...selectedLanguages.map(() => ({ wch: 50 }))  // Language columns
+    ];
+    ws['!cols'] = colWidths;
 
-    // Filter data to only include selected languages
-    const filteredData = currentData.map(question => {
-        const filtered = {
-            question_number: question.question_number,
-            group_number: question.group_number
-        };
-        selectedLanguages.forEach(lang => {
-            filtered[lang] = question[lang];
-        });
-        return filtered;
-    });
+    // Add worksheet to workbook
+    XLSX.utils.book_append_sheet(wb, ws, 'Questionnaire Data');
 
-    // Download
-    const blob = new Blob([JSON.stringify(filteredData, null, 2)], { type: 'application/json' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'questionnaire_data.json';
-    link.click();
+    // Generate and download file
+    XLSX.writeFile(wb, 'questionnaire_data.xlsx');
 }
 
 // Initialize on page load
