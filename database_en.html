@@ -167,7 +167,10 @@ button:disabled {
 
 <h2>Questionnaire Responses Database</h2>
 
-<div id="loadingMessage" class="loading">Loading data...</div>
+<div id="loadingMessage" class="loading">
+    Loading data...<br>
+    <span style="font-size: 14px; color: #666; margin-top: 10px; display: inline-block;">The database may take more than a minute to load due to hosting limitations. Please wait.</span>
+</div>
 <div id="errorMessage" class="error" style="display: none;"></div>
 
 <div id="statsSection" class="stats" style="display: none;">
@@ -236,7 +239,11 @@ const languageNames = {
     'westcircassian': 'West Circassian',
     'danish': 'Danish',
     'nganasan': 'Nganasan',
-    'bulgarian': 'Bulgarian'
+    'bulgarian': 'Bulgarian',
+    'greben': 'Greben dialect of Bulgarian',
+    'nanai': 'Nanai',
+    'nornakhichevan': 'Nor-Nakhichevan dialect of West Armenian',
+    'udmurt': 'Udmurt'
 };
 
 function getLanguageName(lang) {

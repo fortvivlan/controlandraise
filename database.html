@@ -167,7 +167,10 @@ button:disabled {
 
 <h2>База данных ответов на анкету</h2>
 
-<div id="loadingMessage" class="loading">Загрузка данных...</div>
+<div id="loadingMessage" class="loading">
+    Загрузка данных...<br>
+    <span style="font-size: 14px; color: #666; margin-top: 10px; display: inline-block;">База данных может загружаться более одной минуты в связи с техническими особенностями хостинга, подождите, пожалуйста</span>
+</div>
 <div id="errorMessage" class="error" style="display: none;"></div>
 
 <div id="statsSection" class="stats" style="display: none;">
@@ -236,7 +239,11 @@ const languageNames = {
     'westcircassian': 'Адыгейский',
     'danish': 'Датский',
     'nganasan': 'Нганасанский',
-    'bulgarian': 'Болгарский'
+    'bulgarian': 'Болгарский',
+    'greben': 'Гребенский диалект болгарского',
+    'nanai': 'Нанайский',
+    'nornakhichevan': 'Нор-нахичеванский диалект западноармянского',
+    'udmurt': 'Удмуртский'
 };
 
 function getLanguageName(lang) {
