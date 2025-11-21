@@ -192,6 +192,7 @@ button:disabled {
 
     <div class="button-group">
         <button onclick="loadData()">Show Data</button>
+        <button onclick="selectAll()">Select All</button>
         <button onclick="selectAllGroups()">Select All Groups</button>
         <button onclick="selectAllLanguages()">Select All Languages</button>
         <button onclick="clearSelection()">Clear Selection</button>
@@ -243,7 +244,8 @@ const languageNames = {
     'greben': 'Greben dialect of Bulgarian',
     'nanai': 'Nanai',
     'nornakhichevan': 'Nor-Nakhichevan dialect of West Armenian',
-    'udmurt': 'Udmurt'
+    'udmurt': 'Udmurt',
+    'mountmari': 'Mountain Mari'
 };
 
 function getLanguageName(lang) {
@@ -326,7 +328,7 @@ function createLanguageCheckboxes() {
         div.className = 'checkbox-item';
         const displayName = getLanguageName(lang);
         div.innerHTML = `
-            <input type="checkbox" id="lang_${lang}" value="${lang}" checked>
+            <input type="checkbox" id="lang_${lang}" value="${lang}">
             <label for="lang_${lang}">${displayName}</label>
         `;
         container.appendChild(div);
@@ -339,6 +341,10 @@ function selectAllGroups() {
 
 function selectAllLanguages() {
     document.querySelectorAll('[id^="lang_"]').forEach(cb => cb.checked = true);
+}
+
+function selectAll() {
+    document.querySelectorAll('[id^="group_"], [id^="lang_"]').forEach(cb => cb.checked = true);
 }
 
 function clearSelection() {
