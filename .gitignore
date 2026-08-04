@@ -1,0 +1,55 @@
+# Local agent instructions and database service repository
+/AGENTS.md
+/grant-database/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build output
+build/
+dist/
+downloads/
+*.egg-info/
+.eggs/
+*.egg
+wheels/
+pip-wheel-metadata/
+
+# Test, coverage, and profiling output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+*.cover
+*.py,cover
+*.prof
+
+# Python tooling and notebooks
+.python-version
+.ipynb_checkpoints/
+__pypackages__/
+
+# Local configuration and logs
+.env
+.env.*
+*.log
+
+# SQLite temporary files
+*.db-journal
+*.db-shm
+*.db-wal
