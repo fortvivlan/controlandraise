@@ -46,7 +46,9 @@
                 northernkhanty: 'Севернохантыйский',
                 ulch: 'Ульчский',
                 abaza: 'Абазинский',
-                turkish: 'Турецкий'
+                turkish: 'Турецкий',
+                karata: 'Каратинский',
+                sirhi: 'Сирхинский'
             }
         },
         en: {
@@ -89,7 +91,9 @@
                 northernkhanty: 'Northern Khanty',
                 ulch: 'Ulch',
                 abaza: 'Abaza',
-                turkish: 'Turkish'
+                turkish: 'Turkish',
+                karata: 'Karata',
+                sirhi: 'Sirhi'
             }
         }
     };
