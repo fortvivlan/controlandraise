@@ -48,7 +48,8 @@
                 abaza: 'Абазинский',
                 turkish: 'Турецкий',
                 karata: 'Каратинский',
-                sirhi: 'Сирхинский'
+                sirhi: 'Сирхинский',
+                tsahur: 'Цахурский'
             }
         },
         en: {
@@ -93,7 +94,8 @@
                 abaza: 'Abaza',
                 turkish: 'Turkish',
                 karata: 'Karata',
-                sirhi: 'Sirhi'
+                sirhi: 'Sirhi',
+                tsahur: 'Tsakhur'
             }
         }
     };
