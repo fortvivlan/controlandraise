@@ -49,7 +49,8 @@
                 turkish: 'Турецкий',
                 karata: 'Каратинский',
                 sirhi: 'Сирхинский',
-                tsahur: 'Цахурский'
+                tsahur: 'Цахурский',
+                ukrainian: 'Украинский'
             }
         },
         en: {
@@ -95,7 +96,8 @@
                 turkish: 'Turkish',
                 karata: 'Karata',
                 sirhi: 'Sirhi',
-                tsahur: 'Tsakhur'
+                tsahur: 'Tsakhur',
+                ukrainian: 'Ukrainian'
             }
         }
     };
