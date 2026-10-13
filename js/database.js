@@ -50,7 +50,8 @@
                 karata: 'Каратинский',
                 sirhi: 'Сирхинский',
                 tsahur: 'Цахурский',
-                ukrainian: 'Украинский'
+                ukrainian: 'Украинский',
+                serbian: 'Сербский'
             }
         },
         en: {
@@ -97,7 +98,8 @@
                 karata: 'Karata',
                 sirhi: 'Sirhi',
                 tsahur: 'Tsakhur',
-                ukrainian: 'Ukrainian'
+                ukrainian: 'Ukrainian',
+                serbian: 'Serbian'
             }
         }
     };
