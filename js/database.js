@@ -51,7 +51,8 @@
                 sirhi: 'Сирхинский',
                 tsahur: 'Цахурский',
                 ukrainian: 'Украинский',
-                serbian: 'Сербский'
+                serbian: 'Сербский',
+                ossetian: 'Осетинский'
             }
         },
         en: {
@@ -99,7 +100,8 @@
                 sirhi: 'Sirhi',
                 tsahur: 'Tsakhur',
                 ukrainian: 'Ukrainian',
-                serbian: 'Serbian'
+                serbian: 'Serbian',
+                ossetian: 'Ossetian'
             }
         }
     };
