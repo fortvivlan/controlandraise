@@ -1,0 +1,36 @@
+.poss-database { text-align: left; }
+.poss-database h2 { font-size: 24px; }
+.poss-database [hidden] { display: none !important; }
+.poss-database fieldset { border: 1px solid #ccdce3; margin: 16px 0; padding: 14px; border-radius: 5px; }
+.poss-database legend { font-weight: bold; color: #26789e; }
+.poss-database .poss-options { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.poss-database .poss-section-options { display: grid; gap: 8px; }
+.poss-database label { display: inline-flex; align-items: baseline; gap: 5px; cursor: pointer; }
+.poss-database input { flex-shrink: 0; }
+.poss-database button { background: #26789e; color: white; border: 0; border-radius: 4px; padding: 9px 16px; margin: 8px 8px 0 0; cursor: pointer; font: inherit; }
+.poss-database button:hover { background: #1e5f7a; }
+.poss-database button:disabled { background: #777; cursor: default; }
+.poss-database button:focus-visible, .poss-database input:focus-visible { outline: 3px solid #d08b00; outline-offset: 3px; }
+.poss-database .poss-controls { padding: 16px; background: #f5f5f5; border-radius: 5px; }
+.poss-database .poss-languages { max-height: 220px; overflow-y: auto; padding: 4px; }
+.poss-database .poss-error { padding: 12px; background: #ffebee; color: #a32020; margin: 16px 0; }
+.poss-database .poss-table-wrapper { overflow: auto; max-height: 70vh; margin-top: 16px; border: 1px solid #ccdce3; }
+.poss-database .poss-table { border-collapse: separate; border-spacing: 0; width: 100%; }
+.poss-database .poss-table > thead > tr > th { position: sticky; top: 0; z-index: 1; background: #26789e; color: white; }
+.poss-database .poss-table > thead > tr > th:first-child { left: 0; z-index: 3; }
+.poss-database .poss-table > tbody > tr:not(.poss-section) > th { position: sticky; left: 0; z-index: 2; background: white; }
+.poss-database .poss-table > thead > tr > th,
+.poss-database .poss-table > tbody > tr > th,
+.poss-database .poss-table > tbody > tr > td { padding: 12px; border-bottom: 1px solid #ccdce3; border-right: 1px solid #e0e8ec; text-align: left; vertical-align: top; }
+.poss-database .poss-table > tbody > tr > th { min-width: 220px; max-width: 360px; font-weight: normal; }
+.poss-database .poss-table > tbody > tr > td { min-width: 260px; max-width: 580px; }
+.poss-database .poss-table > tbody > .poss-section > th { background: #e3f2fd; color: #185a78; font-weight: bold; }
+.poss-database .poss-answer + .poss-answer { margin-top: 12px; }
+.poss-database .poss-content { white-space: pre-wrap; overflow-wrap: anywhere; }
+.poss-database .poss-missing { color: #666; font-style: italic; }
+.poss-database .poss-example { border: 0; border-collapse: collapse; width: 100%; margin-top: 4px; }
+.poss-database .poss-example td { padding: 0; border: 0; vertical-align: top; }
+@media (max-width: 650px) {
+    .poss-database { font-size: 16px; }
+    .poss-database .poss-controls { padding: 8px; }
+}

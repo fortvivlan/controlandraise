@@ -1,0 +1,1830 @@
+{
+  "schema_version": 1,
+  "sections": [
+    {
+      "id": "possessor",
+      "parent_id": null,
+      "label": {
+        "ru": "ПОСЕССОР",
+        "en": "Possessor"
+      }
+    },
+    {
+      "id": "possessor_form",
+      "parent_id": "possessor",
+      "label": {
+        "ru": "Форма выражения посессора",
+        "en": "Form of possessor expression"
+      }
+    },
+    {
+      "id": "possessor_morphosyntax",
+      "parent_id": "possessor_form",
+      "label": {
+        "ru": "морфосинтаксический статус",
+        "en": "Morphosyntactic status"
+      }
+    },
+    {
+      "id": "possessor_grammar",
+      "parent_id": "possessor_form",
+      "label": {
+        "ru": "грамматические признаки посессора",
+        "en": "Grammatical properties of the possessor"
+      }
+    },
+    {
+      "id": "possessor_syntax",
+      "parent_id": "possessor_form",
+      "label": {
+        "ru": "синтаксические признаки посессора",
+        "en": "Syntactic properties of the possessor"
+      }
+    },
+    {
+      "id": "possessor_position",
+      "parent_id": "possessor_form",
+      "label": {
+        "ru": "синтаксическая позиция посессора",
+        "en": "Syntactic position of the possessor"
+      }
+    },
+    {
+      "id": "possessor_animacy",
+      "parent_id": "possessor",
+      "label": {
+        "ru": "Одушевленность посессора",
+        "en": "Animacy of the possessor"
+      }
+    },
+    {
+      "id": "possessor_information",
+      "parent_id": "possessor",
+      "label": {
+        "ru": "Коммуникативные свойства",
+        "en": "Information structure"
+      }
+    },
+    {
+      "id": "possessum",
+      "parent_id": null,
+      "label": {
+        "ru": "ПОСЕССУМ",
+        "en": "Possessum"
+      }
+    },
+    {
+      "id": "possessum_position",
+      "parent_id": "possessum",
+      "label": {
+        "ru": "Синтаксическая позиция в предложении",
+        "en": "Syntactic position in the clause"
+      }
+    },
+    {
+      "id": "possessum_relations",
+      "parent_id": "possessum",
+      "label": {
+        "ru": "Типы посессивных отношений",
+        "en": "Types of possessive relations"
+      }
+    },
+    {
+      "id": "possessum_information",
+      "parent_id": "possessum",
+      "label": {
+        "ru": "Коммуникативные свойства",
+        "en": "Information structure"
+      }
+    },
+    {
+      "id": "predicate",
+      "parent_id": null,
+      "label": {
+        "ru": "ПРЕДИКАТ",
+        "en": "Predicate"
+      }
+    },
+    {
+      "id": "predicate_interests",
+      "parent_id": "predicate",
+      "label": {
+        "ru": "Интересы посессора",
+        "en": "Possessor’s interests"
+      }
+    },
+    {
+      "id": "predicate_control",
+      "parent_id": "predicate",
+      "label": {
+        "ru": "Контролируемость",
+        "en": "Controllability"
+      }
+    },
+    {
+      "id": "strategies",
+      "parent_id": null,
+      "label": {
+        "ru": "СТРАТЕГИИ",
+        "en": "Strategies"
+      }
+    },
+    {
+      "id": "strategies_prototype",
+      "parent_id": "strategies",
+      "label": {
+        "ru": "Совпадает ли с какой-нибудь из моделей \"европейского прототипа\"? (посессор = Dat)",
+        "en": "Does it match a “European prototype” pattern? (possessor = Dat)"
+      }
+    },
+    {
+      "id": "competing",
+      "parent_id": null,
+      "label": {
+        "ru": "КОНКУРИРУЮЩИЕ КОНСТРУКЦИИ",
+        "en": "Competing constructions"
+      }
+    },
+    {
+      "id": "competing_internal",
+      "parent_id": "competing",
+      "label": {
+        "ru": "Внутренний посессор",
+        "en": "Internal possessor"
+      }
+    },
+    {
+      "id": "competing_predicative",
+      "parent_id": "competing",
+      "label": {
+        "ru": "Предикативная посессивность",
+        "en": "Predicative possession"
+      }
+    },
+    {
+      "id": "additional",
+      "parent_id": null,
+      "label": {
+        "ru": "Дополнительные комментарии",
+        "en": "Additional comments"
+      }
+    },
+    {
+      "id": "bibliography",
+      "parent_id": null,
+      "label": {
+        "ru": "Литература",
+        "en": "Bibliography"
+      }
+    }
+  ],
+  "languages": [
+    {
+      "id": "nanai",
+      "label": {
+        "ru": "Нанайский",
+        "en": "Nanai"
+      }
+    },
+    {
+      "id": "ukrainian",
+      "label": {
+        "ru": "Украинский",
+        "en": "Ukrainian"
+      }
+    },
+    {
+      "id": "bulgarian",
+      "label": {
+        "ru": "Болгарский",
+        "en": "Bulgarian"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "possessor_morphosyntax_affix",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "аффикс на посессуме",
+        "en": "Affix on the possessum"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Вершинное маркирование: на посессуме посессивный суффикс, маркирующий лицо и число посессора. В данном примере 3SG на слове &quot;голова&quot;."
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_clitic",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "клитика на посессуме",
+        "en": "Clitic on the possessum"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_pronoun",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "неклитическое местоимение",
+        "en": "Non-clitic pronoun"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він потиснув </em><em><strong>мені</strong></em><em> руку</em> ‘Он пожал мне руку’.",
+          "source": "",
+          "comment": "мест. дат. пад."
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_sentential_pronoun",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "сентенциальное местоимение",
+        "en": "Sentential pronoun"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Още не съм <strong>им</strong><sub>DAT.3PL</sub> видяла бебето<sub>DEF</sub> ‘Я еще не видела их новорожденного&#x27;",
+          "source": "[Иванова 2026]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_np",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "ИГ",
+        "en": "Noun phrase"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Посессор выражен отдельной ИГ."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він потиснув </em><em><strong>директорові</strong></em><em> руку</em> ‘Он пожал директору руку’.",
+          "source": "",
+          "comment": "ИГ в дат.пад."
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Скъсах на Мария шалчето &#x27;Я порвал(а) шарфик Марии&#x27;",
+          "source": "[Кръпова, Димитрова 2024: 193]",
+          "comment": "ИГ с предлогом <em>на</em>, в том числе дублирование такой ИГ с помощью клитического датива: А имDAT.3PL знаем заплатите на немците PL. ‘А мы знаем их зарплаты, немцев&#x27;"
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_verb_affix",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "аффикс на глаголе",
+        "en": "Affix on the verb"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_morphosyntax_other",
+      "section_id": "possessor_morphosyntax",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>У мене болить голова</em> ‘У меня болит голова’",
+          "source": "",
+          "comment": "Модель с &quot; у+род.пад&quot;"
+        },
+        "bulgarian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_grammar_case",
+      "section_id": "possessor_grammar",
+      "label": {
+        "ru": "падеж",
+        "en": "Case"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Внешний поссесор чаще всего маркируется дативом."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Ти забруднив </em><em><strong>мені </strong></em><em>піджак. </em>‘Ты испачкал мне пиджак.’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "",
+          "source": "",
+          "comment": "только для клитик-местоимений"
+        }
+      }
+    },
+    {
+      "id": "possessor_grammar_other",
+      "section_id": "possessor_grammar",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да ",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да ",
+          "example": "",
+          "source": "",
+          "comment": "Для клитических местоимений - лицо, число. Для именных групп - определенность"
+        }
+      }
+    },
+    {
+      "id": "possessor_syntax_order",
+      "section_id": "possessor_syntax",
+      "label": {
+        "ru": "линейная позиция относительно посессума (пост-, пре-, свободная)",
+        "en": "Linear position relative to the possessum (after, before, free)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "препозиция",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": "другие позиции требуют проверки; самая естественная - препозиция"
+        },
+        "ukrainian": {
+          "value": "препозиция предпочитается",
+          "example": "<em>Він потиснув директорові руку</em> ‘Он пожал директору руку’.",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "препозиция",
+          "example": "Виждам<strong> ви</strong>DAT.2SG мъкитеDEF. ‘Я вижу ваши страдания.’ ",
+          "source": "[Иванова 2026: 895]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_syntax_separation",
+      "section_id": "possessor_syntax",
+      "label": {
+        "ru": "отделимость от посессора другими составляющими",
+        "en": "Separability from the possessor by other constituents"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да, особенно у модели &quot;у+род.&quot;",
+          "example": "<em>У мене рідко болить голова</em> ‘У меня редко  болит голова’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Да си <strong>ми</strong><sub>DAT.1SG</sub> виждал обувките<sub>DEF</sub>? ‘Ты мои туфли не видел?’",
+          "source": "[Иванова 2026: 895]",
+          "comment": "Разделены глагольной формой <em>виждал</em>"
+        }
+      }
+    },
+    {
+      "id": "possessor_syntax_dependents",
+      "section_id": "possessor_syntax",
+      "label": {
+        "ru": "возможность присоединять зависимые",
+        "en": "Ability to take dependents"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "указательные местоимения"
+        },
+        "ukrainian": {
+          "value": "нет (для дативного посессора), да - для модели У+род",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет (для дативного посессора)",
+          "example": "",
+          "source": "",
+          "comment": "Для клитических местоимений - нет. Для именных групп может быть не исключено"
+        }
+      }
+    },
+    {
+      "id": "possessor_syntax_other",
+      "section_id": "possessor_syntax",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_position_subject",
+      "section_id": "possessor_position",
+      "label": {
+        "ru": "подлежащее",
+        "en": "Subject"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_position_direct_object",
+      "section_id": "possessor_position",
+      "label": {
+        "ru": "прямой объект",
+        "en": "Direct object"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "Naonǯokan <strong>mapa-wa siŋmu-ni </strong>toaŋ-ke-ni.\nмальчик старик-ACC язык-3SG тянуть-PST-3SG\n‘Мальчик вырвал у старика язык (букв. потянул старика его язык&#x27;.",
+          "source": "Архив А. П. Путинцевой, 1935 год",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він ударив </em><em><strong>його</strong></em><em> по голові</em> &#x27;Он ударил его по голове&#x27;",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да, см., однако, комментарий",
+          "example": "Той ме докосна по лицето, букв. Он тронул меня по лицу",
+          "source": " [Кръпова, Димитрова 2024: 224-225]",
+          "comment": "Подобные конструкции рассматриваются как possessor splitting, см. [Там же]. "
+        }
+      }
+    },
+    {
+      "id": "possessor_position_indirect_object",
+      "section_id": "possessor_position",
+      "label": {
+        "ru": "косвенный объект",
+        "en": "Indirect object"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Я поранив </em><em><strong>собі</strong></em><em> палець</em> ‘Я поранил себе палец’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": " А имDAT.3PL знаем заплатите на немците PL. ‘А мы знаем их зарплаты, немцев&#x27;",
+          "source": "[Иванова 2026]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_position_locative",
+      "section_id": "possessor_position",
+      "label": {
+        "ru": "локативная группа",
+        "en": "Locative phrase"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Также зафиксирована ИГ с локативом, но чаще встречается с дативом."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em><strong>У мене </strong></em><em>в пам&#x27;яті чомусь залишився такий спогад із дитинства. </em>‘У меня в памяти почему-то осталось такое воспоминание из детства’.",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_position_other",
+      "section_id": "possessor_position",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_animacy_first_second",
+      "section_id": "possessor_animacy",
+      "label": {
+        "ru": "личное местоимение 1-2 лица",
+        "en": "First- and second-person personal pronouns"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "totara buə <strong>bun-du=təni exon-do-pu</strong> bi-či-ni sagǯi əniə\nпотом мы мы-DAT=а село-DAT-1PL быть-PST-3SG старый мать\n‘Потом у нас в нашем селе жила бабушка’.",
+          "source": "Нанайский корпус, sds_110811_ns_utoplennik",
+          "comment": "Вроде бы допустимо, но обычно внешний посессор опускается."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Сонце сліпить </em><em><strong>нам</strong></em><em> очі </em>‘Солнце слепит нам глаза’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Виждам виDAT.2SG мъкитеDEF. ‘Я вижу ваши страдания.’ ",
+          "source": "[Иванова 2026: 895]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_animacy_third",
+      "section_id": "possessor_animacy",
+      "label": {
+        "ru": "личное местоимение 3 лица",
+        "en": "Third-person personal pronouns"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "əsi=tənii <strong>čaa-la ŋaala-do-a-ni</strong> ǰapa-go-raa ii-wu-gu-i=goani, əǰən talgia-či-a-ni.\nсейчас=а тот-LOC рука-DAT-OBL-3SG взять-REP-CVB.NSIM входить-CAUS-REP-PRS=PART хозяин напротив-DIR-OBL-3SG\n‘Теперь она взяла его за руку и завела прямо к хозяину.’",
+          "source": "Kazama S. (ed.). <em>Nanai folktales and legends 5</em>: Tungusic Language and Culture Studies 14. Fuchu, 2000.",
+          "comment": "Зафиксирован только один пример, где в функции местоимения 3 лица используется указательное местоимение."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em><strong>Йому</strong></em><em> пам&#x27;ять відбило відбило.</em> ‘Ему память отшибло.’ ",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Виждам муDAT.3SG мъкитеDEF. ‘Я вижу его страдания.’ ",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_animacy_human",
+      "section_id": "possessor_animacy",
+      "label": {
+        "ru": "человек",
+        "en": "Human"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Я поранив </em><em><strong>собі</strong></em><em> палець</em> ‘Я поранил себе палец’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Още една крачка и ще ѝDAT.3SG.F счупя ръкатаDEF!‘Еще шаг, и я ей сломаю руку!’",
+          "source": "[Иванова 2026: 885]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_animacy_animate",
+      "section_id": "possessor_animacy",
+      "label": {
+        "ru": "другие одушевленные имена",
+        "en": "Other animate nouns"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "“asi-ji səǰəəm-bə-ni tasok <strong>morin-do-a-ni aŋma-do-a-ni</strong> ǰapa-raa mən uikə-ji daa-či-a-ni tata-go-i osini čado=mat, sii xai, aja,”  \nжена-REFL.SG повозка-ACC-3SG точно лошадь-DAT-OBL-3SG рот-DAT-OBL-3SG брать-CVB.NSIM свой дверь-REFL.SG вход-DIR-OBL-3SG тянуть-REP-REFL.SG если тот.DAT=PART ты что ладно\n‘Если ты подъедешь на повозке жены вплотную к ней, схватишь лошадь за уздечку и приведешь её к своему дому, то всё будет хорошо’.",
+          "source": "Kazama S. (ed.). <em>Nanai folktales and legends 5</em>: Tungusic Language and Culture Studies 14. Fuchu, 2000.",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Когато муDAT.3SG.M изтръгнах вътрешноститеDEF, животното подскочи във въздуха. ‘Когда я вырвал внутренности у животного, оно подскочило вверх.’",
+          "source": "[Иванова 2026: 885]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_animacy_inanimate",
+      "section_id": "possessor_animacy",
+      "label": {
+        "ru": "неодушевленные имена",
+        "en": "Inanimate nouns"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "требует проверки",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Виждам муDAT.3SG.M кулитеDEF [на замъка]. ‘Вижу его башни [замка]’",
+          "source": "[Иванова 2026: 888]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_information_topic",
+      "section_id": "possessor_information",
+      "label": {
+        "ru": "является топиком",
+        "en": "Is a topic"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Левый контекст: {Он убивает, убил начальника. Оттуда на них напали, врукопашную всех убили.}"
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Я поранив </em><em><strong>собі</strong></em><em> палець</em> ‘Я поранил себе палец’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не ти<sub>DAT.2SG</sub> разбира <strong>главата</strong><sub>DEF </sub>‘Тебе не понять’, <em>букв.</em> ‘голова у тебя не понимает.’",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessor_information_focus",
+      "section_id": "possessor_information",
+      "label": {
+        "ru": "является фокусом",
+        "en": "Is a focus"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "требует проверки",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "требует проверки",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_position_subject",
+      "section_id": "possessum_position",
+      "label": {
+        "ru": "Подлежащее",
+        "en": "Subject"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>У мене болить </em><em><strong>голова</strong></em><em> </em>‘У меня болит голова’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не ти<sub>DAT.2SG</sub> разбира <strong>главата</strong><sub>DEF </sub>‘Тебе не понять’, <em>букв.</em> ‘голова у тебя не понимает.’",
+          "source": "[Иванова 2026: 888]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_position_direct_object",
+      "section_id": "possessum_position",
+      "label": {
+        "ru": "Прямое дополнение",
+        "en": "Direct object"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Я поранив собі </em><em><strong>палець</strong></em> ‘Я поранил себе палец’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Разбирам ти<sub>DAT.2SG</sub><strong> мисълта</strong><sub>DEF</sub>. ‘Я понимаю твою мысль.’",
+          "source": "[Иванова 2026: 887]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_position_indirect_object",
+      "section_id": "possessum_position",
+      "label": {
+        "ru": "Косвенное дополнение",
+        "en": "Indirect object"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "“asi-ji səǰəəm-bə-ni tasok <strong>morin-do-a-ni aŋma-do-a-ni</strong> ǰapa-raa mən uikə-ji daa-či-a-ni tata-go-i osini čado=mat, sii xai, aja,”  \nжена-REFL.SG повозка-ACC-3SG точно лошадь-DAT-OBL-3SG рот-DAT-OBL-3SG брать-CVB.NSIM свой дверь-REFL.SG вход-DIR-OBL-3SG тянуть-REP-REFL.SG если тот.DAT=PART ты что ладно\n‘Если ты подъедешь на повозке жены вплотную к ней, схватишь лошадь за уздечку и приведешь её к своему дому, то всё будет хорошо’.",
+          "source": "Kazama S. (ed.). <em>Nanai folktales and legends 5</em>: Tungusic Language and Culture Studies 14. Fuchu, 2000.",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_position_incorporation",
+      "section_id": "possessum_position",
+      "label": {
+        "ru": "Инкорпорация в глагол",
+        "en": "Incorporation into the verb"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_position_other",
+      "section_id": "possessum_position",
+      "label": {
+        "ru": "Другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він повісив</em><em><strong> </strong></em><em>їй над</em><em><strong> ліжком</strong></em><em> килимок </em>‘Он повесил ей<strong> </strong>над кроватью коврик&#x27;",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "требует проверки",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_body",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "части тела и нематериальные атрибуты (голова, голос, душа)",
+        "en": "Body parts and non-material attributes (head, voice, soul)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Йому пам&#x27;ять відбило</em> ‘Ему память отшибло.’ ",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не ти<sub>DAT.2SG</sub> разбира <strong>главата</strong><sub>DEF </sub>‘Тебе не понять’, <em>букв.</em> ‘голова у тебя не понимает.’",
+          "source": "[Иванова 2026: 888]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_parts",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "части неодушевленных объектов (стена)",
+        "en": "Parts of inanimate objects (wall)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "требует проверки",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Децата сигурно са ѝ счупили крака [на масата] &#x27;Наверное, дети сломали его ножку [стола]&#x27;",
+          "source": "[Кръпова 2023: 43]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_kinship",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "термины родства и социальные отношения (дочь, приятель)",
+        "en": "Kinship terms and social relations (daughter, friend)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Вона</em><em><strong> йому</strong></em><em> дружина</em> &#x27;Она ему жена&#x27;",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Тя му е дъщеря &#x27;Она ему дочь&#x27;",
+          "source": "",
+          "comment": "Возможно как в рамках отдельной модели (копульные предложения), так и с другими предикатами Познавам му дъщерята &#x27;Я знаю его дочь&#x27;"
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_age",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "обозначение возраста (ему пять лет)",
+        "en": "Age expressions (he is five years old)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": "Отдельной модели для обозначения возраста с помощью внешнего посессора нет. Имеется лишь в составе прямого дополнения: Знам му възрастта &#x27;Я знаю его возраст&#x27;"
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_name",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "представление имени (его зовут Петя)",
+        "en": "Naming expressions (his name is Petya)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Името му е Стоян. &#x27;Его зовут Стоян&#x27;",
+          "source": "",
+          "comment": "только в копульном предложении модели Имя Х-у - Петя"
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_close",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "близкая сфера отчуждаемой собственности (одежда, предметы законного владения, домашние животные) и другие объекты микромира посессора (дом, куртка)",
+        "en": "Close sphere of alienable possession (clothes, legally owned objects, domestic animals) and other objects in the possessor’s personal sphere (house, jacket)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "totara buə <strong>bun-du=təni exon-do-pu</strong> bi-či-ni sagǯi əniə\nпотом мы мы-DAT=а село-DAT-1PL быть-PST-3SG старый мать\n‘Потом у нас в нашем селе жила бабушка’.",
+          "source": "Нанайский корпус, sds_110811_ns_utoplennik",
+          "comment": "личный локатив"
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він повісив</em><em><strong> </strong></em><em>їй над </em><em><strong>ліжком</strong></em><em> килимок </em>‘Он повесил ей<strong> </strong>над кроватью коврик&#x27;",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не миDAT.1SG работи компютърътDEF.‘У меня компьютер не работает.’",
+          "source": "[Иванова 2026: 884]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_products",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "когнитивные, речевые и информационные продукты посессора (идея, слова, шутка, книга)",
+        "en": "Cognitive, speech, and informational products of the possessor (idea, words, joke, book)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "Ти украв у мене <strong>ідею</strong> &#x27;Ты украл у меня идею&#x27;",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Разбирам тиDAT.2SG мисълтаDEF. ‘Я понимаю твою мысль.’",
+          "source": "[Иванова 2026: 887]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_distant",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "дальняя сфера отчуждаемой собственности, напр., объекты временного пользования и владения (мой автобус), случайное, ситуативное владение (ее спектакль – спектакль, на который она пошла) и иные ситуации временной затронутости и причастности посессора",
+        "en": "Distant sphere of alienable possession: temporary use and possession (my bus), incidental or situational possession (her performance — a performance she attended), and other situations involving temporary affectedness or involvement of the possessor"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він рішив мені </em><em><strong>задачу</strong></em><em>.</em> ‘Он решил мне задачу’.",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не <strong>ти</strong><sub>DAT.2PL</sub> виждам подкреплението<sub>DEF</sub>. ‘Где же твое подкрепление?, <em>букв</em>. Не вижу у тебя подкрепления.’",
+          "source": "[Иванова 2026: 895]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_events",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "имена событий, состояний (Он сорвал мне переезд; радость; сон; прогулка; опоздание; концерт Рихтера)",
+        "en": "Event and state nouns (He disrupted my move; joy; sleep; walk; delay; Richter’s concert)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Не ми вгорчавай радостта. &#x27;Не омрачай мне/мою радость&#x27;",
+          "source": "[Кръпова 2023: 44]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_relations_other",
+      "section_id": "possessum_relations",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_information_topic",
+      "section_id": "possessum_information",
+      "label": {
+        "ru": "является топиком",
+        "en": "Is a topic"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "totara buə <strong>bun-du=təni exon-do-pu</strong> bi-či-ni sagǯi əniə\nпотом мы мы-DAT=а село-DAT-1PL быть-PST-3SG старый мать\n‘Потом у нас в нашем селе жила бабушка’.",
+          "source": "Нанайский корпус, sds_110811_ns_utoplennik",
+          "comment": "Обладаемое в этом примере является частью топика, который известен из общих представлений о мире."
+        },
+        "ukrainian": {
+          "value": " да",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": " да",
+          "example": "Очите са ѝ сини. &#x27;Глаза у нее  голубые/синие&#x27;; Компютърът не ми работи &#x27;Компьютер у меня не работает&#x27;",
+          "source": "[Кръпова, Димитрова 2024: 230; Кръпова 2023: 46]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "possessum_information_focus",
+      "section_id": "possessum_information",
+      "label": {
+        "ru": "является фокусом",
+        "en": "Is a focus"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>У мене болить голова</em> ‘У меня болит голова’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Тя му е дъщеря &#x27;Она ему дочь&#x27;",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "predicate_interests_malefactive",
+      "section_id": "predicate_interests",
+      "label": {
+        "ru": "малефактивность",
+        "en": "Malefactivity"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": "Большинство примеров нейтральные, но есть и малефактивные."
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Я поранив собі палець</em> ‘Я поранил себе палец’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Счупи миDAT.1SG три ребра.&#x27;Ты сломал(а) мне три ребра&#x27;",
+          "source": "БНК",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "predicate_interests_benefactive",
+      "section_id": "predicate_interests",
+      "label": {
+        "ru": "бенефактивность",
+        "en": "Benefactivity"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він рішив мені задачу.</em> ‘Он решил мне задачу’.",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Намерих тиDAT.2SG ключаDEF ‘Я нашел тебе(для тебя)/ твой ключ.’",
+          "source": "[Иванова 2026: 884]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "predicate_control_controlled",
+      "section_id": "predicate_control",
+      "label": {
+        "ru": "контролируемые предикаты",
+        "en": "Controlled predicates"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Чичо Марин внимателно муDAT.3SG.M прегледа ранатаDEF и я превърза. ‘Дядя Марин внимательно осмотрел его рану и перевязал ее.’",
+          "source": "[Иванова 2026: 884]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "predicate_control_uncontrolled",
+      "section_id": "predicate_control",
+      "label": {
+        "ru": "неконтролируемые предикаты",
+        "en": "Uncontrolled predicates"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Сонце сліпить нам очі </em>‘Солнце слепит нам глаза’",
+          "source": "",
+          "comment": "неконтролируемые события с одушевленным субъектом и субъектом-силой"
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Познавам муDAT.3SG.M почеркаDEF. ‘[Я] знаю его почерк.’",
+          "source": "[Иванова 2026: 887]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "predicate_other",
+      "section_id": "predicate",
+      "label": {
+        "ru": "другое",
+        "en": "Other"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "",
+          "source": "",
+          "comment": "многие стативные предикаты, включая глаголы восприятия, физических состояний и пр. ,см. [Иванова 2026]"
+        }
+      }
+    },
+    {
+      "id": "strategies_prototype_object",
+      "section_id": "strategies_prototype",
+      "label": {
+        "ru": "Subj V Dat Obj (Obj - посессум)",
+        "en": "Subj V Dat Obj (Obj = possessum)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "təj <strong>ǯaŋgean-do-a-či ǯele-wa-nʲ </strong>čale-ra xəjə-č ənu-xə-č=go &lt;тот начальник-DAT-OBL-3PL голова-ACC-3SG резать-CVB.NSIM вниз.по.течению-DIR уйти-PST-3PL=PART&gt; ‘Тому их начальнику голову отрезав, вниз по течению ушли.’",
+          "source": "Нанайский корпус, vao_090900_kk&amp;so_gaery",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em>Він рішив </em><em><strong>мені </strong></em><em>задачу.</em> ‘Он решил мне задачу’.",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Познавам муDAT.3SG.M почеркаDEF. ‘[Я] знаю его почерк.’",
+          "source": "[Иванова 2026: 887]",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_prototype_object_pp",
+      "section_id": "strategies_prototype",
+      "label": {
+        "ru": "Subj V Dat Obj PP (PP - посессум)",
+        "en": "Subj V Dat Obj PP (PP = possessum)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_prototype_pp",
+      "section_id": "strategies_prototype",
+      "label": {
+        "ru": "Subj V Dat PP (PP - посессум)",
+        "en": "Subj V Dat PP (PP = possessum)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "totara buə <strong>bun-du=təni exon-do-pu</strong> bi-či-ni sagǯi əniə\nпотом мы мы-DAT=а село-DAT-1PL быть-PST-3SG старый мать\n‘Потом у нас в нашем селе жила бабушка’.",
+          "source": "Нанайский корпус, sds_110811_ns_utoplennik",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_prototype_subject",
+      "section_id": "strategies_prototype",
+      "label": {
+        "ru": "V Dat Subj (Subj - посессум)",
+        "en": "V Dat Subj (Subj = possessum)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>tətuə-do-a-ni moŋgoča-ni </strong>niəmə ose-i &lt;одежда-DAT-OBL-3SG воротник-3SG теплый становиться-PRS&gt; ‘В одежде воротник будет теплый.’",
+          "source": "Нанайский корпус, npo_120809_ns_SkazkaLisa",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "да",
+          "example": "<em><strong>Йому</strong></em><em> пам&#x27;ять відбило</em> ‘Ему память отшибло.’ ",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да",
+          "example": "Треперят  ми краката &#x27;Ноги у меня дрожат&#x27;, букв. Дрожат мне ноги",
+          "source": "БНК",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_demotion",
+      "section_id": "strategies",
+      "label": {
+        "ru": "Стратегия с понижением обладаемого (~ \"Он украл меня в деньгах\")",
+        "en": "Possessum demotion strategy (approximately “He robbed me in money”)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_incorporation",
+      "section_id": "strategies",
+      "label": {
+        "ru": "Стратегия инкорпорации в глагол (~ \"Отец усы-побрил сына\")",
+        "en": "Verb incorporation strategy (approximately “The father moustache-shaved his son”)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "strategies_applicative",
+      "section_id": "strategies",
+      "label": {
+        "ru": "Стратегия с аппликативом на глаголе (как в грузинском или калкатунгу; аппликатив \"повышает\" посессора в предложении)",
+        "en": "Verbal applicative strategy (as in Georgian or Kalkatungu; the applicative promotes the possessor in the clause)"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "competing_internal_matching",
+      "section_id": "competing_internal",
+      "label": {
+        "ru": "Совпадает ли морфологическое выражение с конструкцией с внешним посессором?",
+        "en": "Does its morphological expression match the external possessor construction?"
+      },
+      "answers": {
+        "nanai": {
+          "value": "нет",
+          "example": "<strong>Puugə ənim-bə-ni</strong> Difənti naŋgala-go-jča-xa-ni. &lt;Пугэ мать-ACC-3SG Дыфэнты бросить.PFV-REP-DES-PST-3SG&gt; ‘Дыфэнты хотел бросить мать Пугэ.’",
+          "source": "Нанайский корпус, Аврорин 1986, текст 44",
+          "comment": "На посессуме также есть посессивный суффикс, но посессор выражается немаркированной (номинативной) формой."
+        },
+        "ukrainian": {
+          "value": "да (частично)",
+          "example": "книга моєї сестри ‘книга моей сестры’, колесо машини ‘колесо машины’; батьків годинник ‘часы отца’ (букв. ‘отцовские часы’) , сестрина хата ‘дом сестры’, букв. ‘сестрин дом’; моя чашка ‘моя чашка’, її кімната ‘ее комната’",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "да (частично)",
+          "example": "Обичам родителитеDEF сиPOSS ‘Я люблю своих родителей.’",
+          "source": "[Иванова 2026: 881]",
+          "comment": "Конструкция с внутренним посессором в одной из своих моделей тоже выражает посессора краткой формой датива, см. <em>си</em> в примере."
+        }
+      }
+    },
+    {
+      "id": "competing_predicative_matching",
+      "section_id": "competing_predicative",
+      "label": {
+        "ru": "Совпадает ли морфологическое выражение с конструкцией с внешним посессором?",
+        "en": "Does its morphological expression match the external possessor construction?"
+      },
+      "answers": {
+        "nanai": {
+          "value": "да",
+          "example": "<strong>nʲoani-do-a-ni bagba=da</strong> bi-i &lt;он-DAT-OBL-3SG пешня=ADD быть-PRS&gt; ‘У него же пешня есть.’",
+          "source": "Нанайский корпус, nchb_120809_ns_SkazkaDvaStarika",
+          "comment": "Посессор тоже выражается дативной ИГ. На посессуме посессивный показатель обычно отсутствует."
+        },
+        "ukrainian": {
+          "value": "да (частично - в модели у+род.пад.)",
+          "example": "У мене є машина",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "нет",
+          "example": "Той има дъщеря &#x27;У него есть дочь&#x27; ;Той има оръжие &#x27;У него есть оружие&#x27;. ",
+          "source": "БНК",
+          "comment": "букв. Он имеет дочь / оружие. "
+        }
+      }
+    },
+    {
+      "id": "additional_text",
+      "section_id": "additional",
+      "label": {
+        "ru": "ИНЫЕ ПРИЗНАКИ И ДОПОЛНИТЕЛЬНЫЕ КОММЕНТАРИИ",
+        "en": "Additional comments"
+      },
+      "answers": {
+        "nanai": {
+          "value": "не зафиксировано",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    },
+    {
+      "id": "bibliography_text",
+      "section_id": "bibliography",
+      "label": {
+        "ru": "Литература",
+        "en": "Bibliography"
+      },
+      "answers": {
+        "nanai": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "ukrainian": {
+          "value": "",
+          "example": "",
+          "source": "",
+          "comment": ""
+        },
+        "bulgarian": {
+          "value": "1) Иванова Е.Ю. Внешний посессор в болгарском языке и стативные предикации // Индоевропейское языкознание и классическая филология XXX (1), 2026.С. 876-901  ; 2) Кръпова, И. 2023: Посесивност и граматикализация в конструкциите с външен притежател в българския език. Славянски диалози XX, 32, 37–52 ; 3) Кръпова, И., Димитрова, Ц. 2024: Българският език в европейския езиков ареал. София: Университетско издателство „Св. Климент Охридски“.",
+          "example": "",
+          "source": "",
+          "comment": ""
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>External possessor database &mdash; Control and Raising in the Languages of Eurasia</title>
+<link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/poss-database.css">
+</head>
+<body>
+<div class="upperpic">
+</div>
+<div class="maintitle">
+<h1>CONTROL AND RAISING IN THE LANGUAGES OF EURASIA</h1>
+<h2>Pushkin State Russian Language Institute</h2>
+</div>
+<div class="logouni">
+<img src="pictures/girya.png" height="80%">
+</div>
+<div class="logo">
+<img src="pictures/logo_upscale2.png" height="80%">
+</div>
+<div class="stylehead">
+<table width="100%" height="20" background="white">
+<tr><td width="10%" align="center"><a href="index_en.html" title="Back to homepage" style="text-decoration: none"><img src="pictures/blue-home-icon.png" height="32px"></a></td>
+<td width="15%" align="center" valign="top"><a href="participants_en.html" title="Participants" style="font-size: max(1.2vw, 18px); text-decoration: none">PARTICIPANTS</a></td>
+<td width="15%" align="center" valign="top"><a href="form_en.html" title="Questionnaire" style="font-size: max(1.2vw, 18px); text-decoration: none">QUESTIONNAIRE</a></td>
+<td width="15%" align="center" valign="top"><a href="corpora_en.html" title="Materials" style="font-size: max(1.2vw, 18px); text-decoration: none">MATERIALS</a></td>
+<td width="10%" align="center" valign="top"><a href="talks_en.html" title="Talks" style="font-size: max(1.2vw, 18px); text-decoration: none">TALKS</a></td>
+<td width="15%" align="center" valign="top"><a href="publications_en.html" title="Publications" style="font-size: max(1.2vw, 18px); text-decoration: none">PUBLICATIONS</a></td>
+<td width="10%" align="center" valign="top"><a href="links_en.html" title="Contacts" style="font-size: max(1.2vw, 18px); text-decoration: none">CONTACTS</a></td></tr>
+</table>
+</div>
+<main class="mainbody poss-database" style="padding: 20px;">
+<h2>External possessor database</h2>
+<p>Select sections, languages, and additional details, then click Show. Selection changes take effect only after clicking the button. Empty answers are marked “No data”. Answers are presented in their original languages.</p>
+<noscript><p>Enable JavaScript to browse the database.</p></noscript>
+<p id="poss-status" role="status">Loading data…</p>
+<p id="poss-stats"></p>
+<div id="poss-controls" class="poss-controls" hidden>
+    <fieldset>
+        <legend>Questionnaire sections</legend>
+        <div id="poss-sections" class="poss-section-options"></div>
+        <button type="button" data-poss-select="section:all">Select all sections</button>
+        <button type="button" data-poss-select="section:none">Clear sections</button>
+    </fieldset>
+    <fieldset>
+        <legend>Languages</legend>
+        <div id="poss-languages" class="poss-options poss-languages"></div>
+        <button type="button" data-poss-select="language:all">Select all languages</button>
+        <button type="button" data-poss-select="language:none">Clear languages</button>
+    </fieldset>
+    <fieldset>
+        <legend>Additional details</legend>
+        <div class="poss-options">
+            <label><input type="checkbox" name="detail" value="example"> Example</label>
+            <label><input type="checkbox" name="detail" value="source"> Source</label>
+            <label><input type="checkbox" name="detail" value="comment"> Comment</label>
+        </div>
+    </fieldset>
+    <button type="button" id="poss-show">Show</button>
+    <button type="button" id="poss-export" disabled>Export to Excel (XLSX)</button>
+    <p id="poss-instructions" role="status"></p>
+</div>
+<p id="poss-error" class="poss-error" role="alert" hidden></p>
+<section id="poss-results" hidden>
+    <h3 id="poss-count" aria-live="polite"></h3>
+    <div class="poss-table-wrapper" tabindex="0" role="region" aria-label="External possessor database">
+        <table class="poss-table">
+            <thead id="poss-head"></thead>
+            <tbody id="poss-body"></tbody>
+        </table>
+    </div>
+</section>
+</main>
+<div class="bottomliner">
+<div class="langbutton">
+	<a href="poss-database.html" title="Русский" style="font-size: large; text-decoration: none; color: #26789e">RU</a>
+</div>
+</div>
+<div class="address">
+		<p><a href="https://www.pushkin.institute/">Pushkin State Russian Language Institute</a><br>
+		RSF Grant No. 25-18-00222</p>
+
+</div>
+
+<script src="js/poss-database.js"></script>
+
+</body>
+</html>

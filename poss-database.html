@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>База данных по внешнему посессору &mdash; Контроль и подъем в языках Евразии</title>
+<link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/poss-database.css">
+</head>
+<body>
+<div class="upperpic">
+</div>
+<div class="maintitle">
+<h1>КОНТРОЛЬ И ПОДЪЕМ В ЯЗЫКАХ ЕВРАЗИИ</h1>
+<h2>ГИРЯ им. А. С. Пушкина</h2>
+</div>
+<div class="logouni">
+<img src="pictures/girya.png" height="80%">
+</div>
+<div class="logo">
+<img src="pictures/logo_upscale2.png" height="80%">
+</div>
+<div class="stylehead">
+<table width="100%" height="20" background="white">
+<tr><td width="10%" align="center"><a href="index.html" title="Вернуться на главную" style="text-decoration: none"><img src="pictures/blue-home-icon.png" height="32px"></a></td>
+<td width="15%" align="center" valign="top"><a href="participants.html" title="Участники" style="font-size: max(1.2vw, 18px); text-decoration: none">УЧАСТНИКИ</a></td>
+<td width="15%" align="center" valign="top"><a href="form.html" title="Анкета" style="font-size: max(1.2vw, 18px); text-decoration: none">АНКЕТА</a></td>
+<td width="15%" align="center" valign="top"><a href="corpora.html" title="Материалы" style="font-size: max(1.2vw, 18px); text-decoration: none">МАТЕРИАЛЫ</a></td>
+<td width="10%" align="center" valign="top"><a href="talks.html" title="Доклады" style="font-size: max(1.2vw, 18px); text-decoration: none">ДОКЛАДЫ</a></td>
+<td width="15%" align="center" valign="top"><a href="publications.html" title="Публикации" style="font-size: max(1.2vw, 18px); text-decoration: none">ПУБЛИКАЦИИ</a></td>
+<td width="10%" align="center" valign="top"><a href="links.html" title="Контакты" style="font-size: max(1.2vw, 18px); text-decoration: none">КОНТАКТЫ</a></td></tr>
+</table>
+</div>
+<main class="mainbody poss-database" style="padding: 20px;">
+<h2>База данных по внешнему посессору</h2>
+<p>Выберите разделы, языки и дополнительные сведения, затем нажмите «Показать». Изменения выбора применяются только после нажатия кнопки. Пустые ответы обозначены «Нет данных».</p>
+<noscript><p>Для просмотра базы данных необходимо включить JavaScript.</p></noscript>
+<p id="poss-status" role="status">Загрузка данных…</p>
+<p id="poss-stats"></p>
+<div id="poss-controls" class="poss-controls" hidden>
+    <fieldset>
+        <legend>Разделы анкеты</legend>
+        <div id="poss-sections" class="poss-section-options"></div>
+        <button type="button" data-poss-select="section:all">Выбрать все разделы</button>
+        <button type="button" data-poss-select="section:none">Снять выбор разделов</button>
+    </fieldset>
+    <fieldset>
+        <legend>Языки</legend>
+        <div id="poss-languages" class="poss-options poss-languages"></div>
+        <button type="button" data-poss-select="language:all">Выбрать все языки</button>
+        <button type="button" data-poss-select="language:none">Снять выбор языков</button>
+    </fieldset>
+    <fieldset>
+        <legend>Дополнительные сведения</legend>
+        <div class="poss-options">
+            <label><input type="checkbox" name="detail" value="example"> Пример</label>
+            <label><input type="checkbox" name="detail" value="source"> Источник</label>
+            <label><input type="checkbox" name="detail" value="comment"> Комментарий</label>
+        </div>
+    </fieldset>
+    <button type="button" id="poss-show">Показать</button>
+    <button type="button" id="poss-export" disabled>Экспорт в Excel (XLSX)</button>
+    <p id="poss-instructions" role="status"></p>
+</div>
+<p id="poss-error" class="poss-error" role="alert" hidden></p>
+<section id="poss-results" hidden>
+    <h3 id="poss-count" aria-live="polite"></h3>
+    <div class="poss-table-wrapper" tabindex="0" role="region" aria-label="База данных по внешнему посессору">
+        <table class="poss-table">
+            <thead id="poss-head"></thead>
+            <tbody id="poss-body"></tbody>
+        </table>
+    </div>
+</section>
+</main>
+<div class="bottomliner">
+<div class="langbutton">
+	<a href="poss-database_en.html" title="English" style="font-size: large; text-decoration: none; color: #26789e">EN</a>
+</div>
+</div>
+<div class="address">
+		<p><a href="https://www.pushkin.institute/">Государственный институт русского языка им. А. С. Пушкина</a><br>
+		Грант РНФ № 25-18-00222</p>
+
+</div>
+
+<script src="js/poss-database.js"></script>
+
+</body>
+</html>

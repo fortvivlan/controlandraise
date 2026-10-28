@@ -52,7 +52,8 @@
                 tsahur: 'Цахурский',
                 ukrainian: 'Украинский',
                 serbian: 'Сербский',
-                ossetian: 'Осетинский'
+                ossetian: 'Осетинский',
+                swedish: 'Шведский'
             }
         },
         en: {
@@ -101,7 +102,8 @@
                 tsahur: 'Tsakhur',
                 ukrainian: 'Ukrainian',
                 serbian: 'Serbian',
-                ossetian: 'Ossetian'
+                ossetian: 'Ossetian',
+                swedish: 'Swedish'
             }
         }
     };
