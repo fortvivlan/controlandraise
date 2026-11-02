@@ -53,7 +53,8 @@
                 ukrainian: 'Украинский',
                 serbian: 'Сербский',
                 ossetian: 'Осетинский',
-                swedish: 'Шведский'
+                swedish: 'Шведский',
+                icelandic: 'Исландский'
             }
         },
         en: {
@@ -103,7 +104,8 @@
                 ukrainian: 'Ukrainian',
                 serbian: 'Serbian',
                 ossetian: 'Ossetian',
-                swedish: 'Swedish'
+                swedish: 'Swedish',
+                icelandic: 'Icelandic'
             }
         }
     };
