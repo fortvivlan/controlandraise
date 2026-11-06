@@ -54,7 +54,8 @@
                 serbian: 'Сербский',
                 ossetian: 'Осетинский',
                 swedish: 'Шведский',
-                icelandic: 'Исландский'
+                icelandic: 'Исландский',
+                mishar: 'Мишарский диалект татарского языка'
             }
         },
         en: {
@@ -105,7 +106,8 @@
                 serbian: 'Serbian',
                 ossetian: 'Ossetian',
                 swedish: 'Swedish',
-                icelandic: 'Icelandic'
+                icelandic: 'Icelandic',
+                mishar: 'Mishar dialect of Tatar'
             }
         }
     };
