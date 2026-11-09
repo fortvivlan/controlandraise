@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Адвербиалы: валентности, конструкции, системные связи &mdash; Контроль и подъем в языках Евразии</title>
+<link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script async src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/adverbials-database.css">
+</head>
+<body>
+<div class="upperpic">
+</div>
+<div class="maintitle">
+<h1>КОНТРОЛЬ И ПОДЪЕМ В ЯЗЫКАХ ЕВРАЗИИ</h1>
+<h2>ГИРЯ им. А. С. Пушкина</h2>
+</div>
+<div class="logouni">
+<img src="pictures/girya.png" height="80%">
+</div>
+<div class="logo">
+<img src="pictures/logo_upscale2.png" height="80%">
+</div>
+<div class="stylehead">
+<table width="100%" height="20" background="white">
+<tr><td width="10%" align="center"><a href="index.html" title="Вернуться на главную" style="text-decoration: none"><img src="pictures/blue-home-icon.png" height="32px"></a></td>
+<td width="15%" align="center" valign="top"><a href="participants.html" title="Участники" style="font-size: max(1.2vw, 18px); text-decoration: none">УЧАСТНИКИ</a></td>
+<td width="15%" align="center" valign="top"><a href="form.html" title="Анкета" style="font-size: max(1.2vw, 18px); text-decoration: none">АНКЕТА</a></td>
+<td width="15%" align="center" valign="top"><a href="corpora.html" title="Материалы" style="font-size: max(1.2vw, 18px); text-decoration: none">МАТЕРИАЛЫ</a></td>
+<td width="10%" align="center" valign="top"><a href="talks.html" title="Доклады" style="font-size: max(1.2vw, 18px); text-decoration: none">ДОКЛАДЫ</a></td>
+<td width="15%" align="center" valign="top"><a href="publications.html" title="Публикации" style="font-size: max(1.2vw, 18px); text-decoration: none">ПУБЛИКАЦИИ</a></td>
+<td width="10%" align="center" valign="top"><a href="links.html" title="Контакты" style="font-size: max(1.2vw, 18px); text-decoration: none">КОНТАКТЫ</a></td></tr>
+</table>
+</div>
+<main class="mainbody adverbials-database" style="padding: 20px;">
+<h2>Адвербиалы: валентности, конструкции, системные связи</h2>
+<p>База содержит морфосинтаксические и семантические характеристики русских выражений, образованных от абстрактных существительных. Они могут выступать как адвербиалы, предикаты и производные предлоги. Особое внимание уделено контролю субъекта адвербиала — его кореферентности с субъектом главного предиката.</p>
+<p class="adv-downloads"><a href="files/БАЗА_АДВЕРБИАЛЫ_2025_2026_валентности_конструкции.xlsx" download>Скачать базу (XLSX, 2025–2026)</a> · <a href="files/Кустова_описание_БАЗЫ_АДВЕРБИАЛОВ.doc" download>Описание базы (DOC, русский язык)</a></p>
+<details class="adv-guide"><summary>О полях и обозначениях</summary><p>Значения и коды сохранены в исходном виде. В столбце «Предлог / помета» встречаются и предлоги, и другие пометы. АДВ — адвербиал, СК — сказуемое, ПРЕДЛ — предлог. В поле контроля «1 Сб» указывает на совпадение субъектов, «2 Сб» — на несовпадение. Составные и неуверенные пометы (например, «1 Сб / 2 Сб», «?») доступны отдельно.</p><p>«Происхождение» объединяет сведения об образовании и исходном слове: например, «отглаг бегать/бежать» означает «отглагольное образование от бегать/бежать». «Нет данных» обозначает пустое значение; «Ошибка в источнике» — ошибку Excel без доступного текста.</p></details>
+<p>Выберите фильтры и столбцы, затем нажмите «Показать». Пустые фильтры не ограничивают поиск. Изменения применяются только по кнопке; экспорт использует последние показанные результаты целиком.</p>
+<noscript><p>Для просмотра базы включите JavaScript.</p></noscript>
+<p id="adv-status" role="status">Загрузка данных…</p>
+<p id="adv-stats" class="adv-stats" hidden></p>
+<form id="adv-controls" class="adv-controls" hidden>
+    <label for="adv-query" class="adv-query-label">Поиск по всем полям</label>
+    <input id="adv-query" type="search" aria-describedby="adv-search-hint" data-affects-results>
+    <p id="adv-search-hint" class="adv-hint">Ищется введенная фраза, включая скрытые столбцы, примеры и происхождение. Регистр и различие е/ё не учитываются.</p>
+    <h3>Основные фильтры</h3>
+    <p class="adv-hint">Внутри поля достаточно совпадения с одним выбранным значением; между полями должны выполняться все условия. Составные коды не разбиваются.</p>
+    <div id="adv-filters" class="adv-filters"></div>
+    <details class="adv-advanced"><summary>Дополнительные фильтры</summary><div id="adv-advanced-filters" class="adv-filters"></div></details>
+    <fieldset><legend>Столбцы таблицы</legend>
+        <div id="adv-columns" class="adv-columns"></div>
+        <button type="button" id="adv-columns-all">Выбрать все столбцы</button>
+        <button type="button" id="adv-columns-none">Снять выбор столбцов</button>
+    </fieldset>
+    <div class="adv-actions">
+        <button type="submit" id="adv-show">Показать</button>
+        <button type="button" id="adv-reset">Сбросить настройки</button>
+        <button type="button" id="adv-export" disabled>Экспорт в Excel (XLSX)</button>
+    </div>
+    <p id="adv-pending" role="status"></p>
+</form>
+<p id="adv-error" class="adv-error" role="alert" hidden></p>
+<section id="adv-results" hidden>
+    <h3 id="adv-count" aria-live="polite"></h3>
+    <p id="adv-empty" hidden></p>
+    <div id="adv-table-wrapper" class="adv-table-wrapper" tabindex="0" role="region" aria-label="Адвербиалы: валентности, конструкции, системные связи">
+        <table class="adv-table"><caption id="adv-caption" class="adv-sr-only"></caption><thead id="adv-head"></thead><tbody id="adv-body"></tbody></table>
+    </div>
+    <nav class="adv-pagination" aria-label="Страницы результатов">
+        <button type="button" id="adv-previous">Назад</button>
+        <span id="adv-page" role="status"></span>
+        <button type="button" id="adv-next">Далее</button>
+    </nav>
+</section>
+</main>
+<div class="bottomliner">
+<div class="langbutton">
+	<a href="adverbials-database_en.html" title="English" style="font-size: large; text-decoration: none; color: #26789e">EN</a>
+</div>
+</div>
+<div class="address">
+		<p><a href="https://www.pushkin.institute/">Государственный институт русского языка им. А. С. Пушкина</a><br>
+		Грант РНФ № 25-18-00222</p>
+
+</div>
+
+<script src="js/adverbials-database.js"></script>
+
+</body>
+</html>

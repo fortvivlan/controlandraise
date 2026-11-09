@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Adverbials: valencies, constructions, systemic relations &mdash; Control and Raising in the Languages of Eurasia</title>
+<link rel="shortcut icon" href="pictures/favico.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script async src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/adverbials-database.css">
+</head>
+<body>
+<div class="upperpic">
+</div>
+<div class="maintitle">
+<h1>CONTROL AND RAISING IN THE LANGUAGES OF EURASIA</h1>
+<h2>Pushkin State Russian Language Institute</h2>
+</div>
+<div class="logouni">
+<img src="pictures/girya.png" height="80%">
+</div>
+<div class="logo">
+<img src="pictures/logo_upscale2.png" height="80%">
+</div>
+<div class="stylehead">
+<table width="100%" height="20" background="white">
+<tr><td width="10%" align="center"><a href="index_en.html" title="Back to homepage" style="text-decoration: none"><img src="pictures/blue-home-icon.png" height="32px"></a></td>
+<td width="15%" align="center" valign="top"><a href="participants_en.html" title="Participants" style="font-size: max(1.2vw, 18px); text-decoration: none">PARTICIPANTS</a></td>
+<td width="15%" align="center" valign="top"><a href="form_en.html" title="Questionnaire" style="font-size: max(1.2vw, 18px); text-decoration: none">QUESTIONNAIRE</a></td>
+<td width="15%" align="center" valign="top"><a href="corpora_en.html" title="Materials" style="font-size: max(1.2vw, 18px); text-decoration: none">MATERIALS</a></td>
+<td width="10%" align="center" valign="top"><a href="talks_en.html" title="Talks" style="font-size: max(1.2vw, 18px); text-decoration: none">TALKS</a></td>
+<td width="15%" align="center" valign="top"><a href="publications_en.html" title="Publications" style="font-size: max(1.2vw, 18px); text-decoration: none">PUBLICATIONS</a></td>
+<td width="10%" align="center" valign="top"><a href="links_en.html" title="Contacts" style="font-size: max(1.2vw, 18px); text-decoration: none">CONTACTS</a></td></tr>
+</table>
+</div>
+<main class="mainbody adverbials-database" style="padding: 20px;">
+<h2>Adverbials: valencies, constructions, systemic relations</h2>
+<p>The database describes morphosyntactic and semantic properties of Russian expressions derived from abstract nouns. These expressions can function as adverbials, predicates, and derived prepositions. Particular attention is given to subject control: whether the subject of an adverbial is coreferential with the subject of the main predicate.</p>
+<p class="adv-downloads"><a href="files/БАЗА_АДВЕРБИАЛЫ_2025_2026_валентности_конструкции.xlsx" download>Download database (XLSX, 2025–2026)</a> · <a href="files/Кустова_описание_БАЗЫ_АДВЕРБИАЛОВ.doc" download>Database description (DOC, in Russian)</a></p>
+<details class="adv-guide"><summary>Fields and notation</summary><p>Source values and codes are preserved. “Preposition / marker” contains prepositions and other markers. АДВ means adverbial, СК means predicate, and ПРЕДЛ means preposition. For subject control, “1 Сб” indicates matching subjects and “2 Сб” indicates different subjects. Compound and uncertain markers (such as “1 Сб / 2 Сб” and “?”) are separate choices.</p><p>“Origin” combines derivation information and the source word: for example, “отглаг бегать/бежать” means “a deverbal formation from бегать/бежать”. “No data” indicates an empty value; “Source error” indicates an Excel error without usable text.</p></details>
+<p>Select filters and columns, then click Show. Unselected filters impose no restriction. Changes apply only when you click Show; export includes all results from the last displayed selection. Source data remain in Russian.</p>
+<noscript><p>Enable JavaScript to browse the database.</p></noscript>
+<p id="adv-status" role="status">Loading data…</p>
+<p id="adv-stats" class="adv-stats" hidden></p>
+<form id="adv-controls" class="adv-controls" hidden>
+    <label for="adv-query" class="adv-query-label">Search all fields</label>
+    <input id="adv-query" type="search" aria-describedby="adv-search-hint" data-affects-results>
+    <p id="adv-search-hint" class="adv-hint">Search matches the entered phrase, including hidden columns, examples, and origin. Matching ignores case and treats е/ё as equivalent.</p>
+    <h3>Main filters</h3>
+    <p class="adv-hint">Selected values within a field are combined with OR; different fields are combined with AND. Compound codes are not split.</p>
+    <div id="adv-filters" class="adv-filters"></div>
+    <details class="adv-advanced"><summary>Advanced filters</summary><div id="adv-advanced-filters" class="adv-filters"></div></details>
+    <fieldset><legend>Table columns</legend>
+        <div id="adv-columns" class="adv-columns"></div>
+        <button type="button" id="adv-columns-all">Select all columns</button>
+        <button type="button" id="adv-columns-none">Clear columns</button>
+    </fieldset>
+    <div class="adv-actions">
+        <button type="submit" id="adv-show">Show</button>
+        <button type="button" id="adv-reset">Reset controls</button>
+        <button type="button" id="adv-export" disabled>Export to Excel (XLSX)</button>
+    </div>
+    <p id="adv-pending" role="status"></p>
+</form>
+<p id="adv-error" class="adv-error" role="alert" hidden></p>
+<section id="adv-results" hidden>
+    <h3 id="adv-count" aria-live="polite"></h3>
+    <p id="adv-empty" hidden></p>
+    <div id="adv-table-wrapper" class="adv-table-wrapper" tabindex="0" role="region" aria-label="Adverbials: valencies, constructions, systemic relations">
+        <table class="adv-table"><caption id="adv-caption" class="adv-sr-only"></caption><thead id="adv-head"></thead><tbody id="adv-body"></tbody></table>
+    </div>
+    <nav class="adv-pagination" aria-label="Result pages">
+        <button type="button" id="adv-previous">Previous</button>
+        <span id="adv-page" role="status"></span>
+        <button type="button" id="adv-next">Next</button>
+    </nav>
+</section>
+</main>
+<div class="bottomliner">
+<div class="langbutton">
+	<a href="adverbials-database.html" title="Русский" style="font-size: large; text-decoration: none; color: #26789e">RU</a>
+</div>
+</div>
+<div class="address">
+		<p><a href="https://www.pushkin.institute/">Pushkin State Russian Language Institute</a><br>
+		RSF Grant No. 25-18-00222</p>
+
+</div>
+
+<script src="js/adverbials-database.js"></script>
+
+</body>
+</html>
