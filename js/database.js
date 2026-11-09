@@ -56,7 +56,9 @@
                 swedish: 'Шведский',
                 icelandic: 'Исландский',
                 mishar: 'Мишарский диалект татарского языка',
-                udege: 'Удэгейский'
+                udege: 'Удэгейский',
+                evenki: 'Эвенкийский',
+                belarusian: 'Белорусский'
             }
         },
         en: {
@@ -109,7 +111,9 @@
                 swedish: 'Swedish',
                 icelandic: 'Icelandic',
                 mishar: 'Mishar dialect of Tatar',
-                udege: 'Udege'
+                udege: 'Udege',
+                evenki: 'Evenki',
+                belarusian: 'Belarusian'
             }
         }
     };
