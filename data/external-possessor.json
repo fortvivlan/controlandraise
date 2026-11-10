@@ -392,7 +392,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Він потиснув </em><em><strong>директорові</strong></em><em> руку</em> ‘Он пожал директору руку’.",
+          "example": "<em>Він потиснув </em><em><strong>директорові</strong></em><em> руку</em> ‘Он пожал директору руку’; <em>Щоб не звернути чиєїсь уваги, вона повинна була сказати, що йде до корчми ще раз оглянути </em><em><strong>хлопцеві </strong></em><em>рану</em> (О. Соколовський), букв.&#x27;чтоб еще раз осмотреть мальчику рану&#x27;",
           "source": "",
           "comment": "ИГ в дат.пад."
         },
@@ -472,7 +472,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>У мене болить голова</em> ‘У меня болит голова’",
+          "example": "<em><strong>У мене</strong></em><em> болить голова</em> ‘У меня болит голова’",
           "source": "",
           "comment": "Модель с &quot; у+род.пад&quot;"
         },
@@ -552,9 +552,9 @@
         },
         "ukrainian": {
           "value": "да ",
-          "example": "",
+          "example": "<em>  У мене   машина зламалася   </em>&#x27;У меня машина сломалась&#x27;                      <em>                                                </em>",
           "source": "",
-          "comment": ""
+          "comment": " у+род.пад"
         },
         "bulgarian": {
           "value": "да ",
@@ -671,7 +671,7 @@
           "comment": "указательные местоимения"
         },
         "ukrainian": {
-          "value": "нет (для дативного посессора), да - для модели У+род",
+          "value": "да, кроме местоименного посессора",
           "example": "",
           "source": "",
           "comment": ""
@@ -832,7 +832,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Я поранив </em><em><strong>собі</strong></em><em> палець</em> ‘Я поранил себе палец’",
+          "example": "<em>Хіба вперше смерть заглядала </em><em><strong>йому </strong></em><em>в очі? </em>(В. Малик), &#x27;Разве впервые смерть заглядывала ему в глаза?&#x27;",
           "source": "",
           "comment": ""
         },
@@ -992,7 +992,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em><strong>Йому</strong></em><em> пам&#x27;ять відбило відбило.</em> ‘Ему память отшибло.’ ",
+          "example": "<em><strong>Йому</strong></em><em> пам&#x27;ять відбило </em> ‘Ему память отшибло.’ ",
           "source": "",
           "comment": ""
         },
@@ -1152,9 +1152,9 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Я поранив </em><em><strong>собі</strong></em><em> палець</em> ‘Я поранил себе палец’",
+          "example": "<span style=\"color: #1a1a1a\"><em>1)</em></span><span style=\"color: #1a1a1a\"><em><strong> У мене</strong></em></span><span style=\"color: #1a1a1a\"><em> болить голова </em></span><span style=\"color: #1a1a1a\">‘У меня болит голова’</span><span style=\"color: #1a1a1a\"><em>. </em></span><span style=\"color: #1a1a1a\">2) </span><span style=\"color: #1a1a1a\"><em>Ще один спосіб розпізнати інсульт — оглянути</em></span><span style=\"color: #1a1a1a\"><em><strong> потерпілому</strong></em></span><span style=\"color: #1a1a1a\"><em> язик. </em></span><span style=\"color: #1a1a1a\">&#x27;Еще один способ распознать инсульт - осмотреть у потерпевшего (букв. осмотреть потерпевшему) язык&#x27;</span>",
           "source": "",
-          "comment": ""
+          "comment": "тематический сегмент между частями ремы (осмотреть…язык):  оглянути потерпілому язик. &#x27;Еще один способ распознать инсульт - осмотреть у потерпевшего (букв. осмотреть потерпевшему) язык&#x27;"
         },
         "bulgarian": {
           "value": "да",
@@ -1191,8 +1191,8 @@
           "comment": ""
         },
         "ukrainian": {
-          "value": "требует проверки",
-          "example": "",
+          "value": "да, может быть частью комментария",
+          "example": "<span style=\"color: #1a1a1a\"><em>Вона вкоротила </em></span><span style=\"color: #1a1a1a\"><em><strong>собі </strong></em></span><span style=\"color: #1a1a1a\"><em>життя</em></span>",
           "source": "",
           "comment": ""
         },
@@ -1392,7 +1392,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Він повісив</em><em><strong> </strong></em><em>їй над</em><em><strong> ліжком</strong></em><em> килимок </em>‘Он повесил ей<strong> </strong>над кроватью коврик&#x27;",
+          "example": "<em>Кров ударила йому </em><em><strong>в голову</strong></em> &#x27;Кровь ударила ему в голову&#x27;; <em>Бабуся поклала руку мені на плече</em>. (В. Нестайко)",
           "source": "",
           "comment": ""
         },
@@ -1432,7 +1432,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Йому пам&#x27;ять відбило</em> ‘Ему память отшибло.’ ",
+          "example": "<em>Ще один спосіб розпізнати інсульт — оглянути потерпілому </em><em><strong>язик </strong></em>&#x27;Еще один способ распознать инсульт - осмотреть у потерпевшего язык&#x27;",
           "source": "",
           "comment": ""
         },
@@ -1672,7 +1672,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "Ти украв у мене <strong>ідею</strong> &#x27;Ты украл у меня идею&#x27;",
+          "example": "<em>Ти украв у мене </em><em><strong>ідею.</strong></em> &#x27;Ты украл у меня идею&#x27;",
           "source": "",
           "comment": ""
         },
@@ -1832,7 +1832,7 @@
         },
         "ukrainian": {
           "value": " да",
-          "example": "",
+          "example": "<em>У мене </em><em><strong>в пам&#x27;яті</strong></em><em> чомусь залишився такий спогад із дитинства. </em>‘У меня в памяти почему-то осталось такое воспоминание из детства’.",
           "source": "",
           "comment": ""
         },
@@ -1952,7 +1952,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "<em>Він рішив мені задачу.</em> ‘Он решил мне задачу’.",
+          "example": " <em>Щоб не звернути чиєїсь уваги, вона повинна була сказати, що йде до корчми ще раз оглянути хлопцеві рану</em> (О. Соколовський)",
           "source": "",
           "comment": ""
         },
@@ -1992,7 +1992,7 @@
         },
         "ukrainian": {
           "value": "да",
-          "example": "",
+          "example": "<span style=\"color: #1a1a1a\"><em>Поклади мені руку в руку</em></span><span style=\"color: #1a1a1a\"> (В.Симоненко)</span>",
           "source": "",
           "comment": ""
         },
@@ -2151,14 +2151,14 @@
           "comment": ""
         },
         "ukrainian": {
-          "value": "нет",
-          "example": "",
+          "value": "да",
+          "example": "<em>Вона кинула йому гроші </em><em><strong>в обличчя</strong></em> &#x27;Она бросила ему деньги в лицо&#x27;",
           "source": "",
           "comment": ""
         },
         "bulgarian": {
-          "value": "нет",
-          "example": "",
+          "value": "да",
+          "example": "Тя му хвърли пари в лицето &#x27;Она бросила ему деньги в лицо&#x27;",
           "source": "",
           "comment": ""
         },
@@ -2191,14 +2191,14 @@
           "comment": ""
         },
         "ukrainian": {
-          "value": "нет",
-          "example": "",
+          "value": "да",
+          "example": "<em>Кров ударила йому </em><em><strong>в голову</strong></em> &#x27;Кровь ударила ему в голову&#x27;",
           "source": "",
           "comment": ""
         },
         "bulgarian": {
-          "value": "нет",
-          "example": "",
+          "value": "да",
+          "example": "Кръвта му нахлу в очите &#x27;Кровь ему бросилась в глаза&#x27;",
           "source": "",
           "comment": ""
         },
@@ -2231,8 +2231,8 @@
           "comment": ""
         },
         "ukrainian": {
-          "value": "да",
-          "example": "<em><strong>Йому</strong></em><em> пам&#x27;ять відбило</em> ‘Ему память отшибло.’ ",
+          "value": "нет",
+          "example": "",
           "source": "",
           "comment": ""
         },
