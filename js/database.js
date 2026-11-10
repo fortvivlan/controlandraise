@@ -58,7 +58,9 @@
                 mishar: 'Мишарский диалект татарского языка',
                 udege: 'Удэгейский',
                 evenki: 'Эвенкийский',
-                belarusian: 'Белорусский'
+                belarusian: 'Белорусский',
+                italian: 'Итальянский',
+                uilta: 'Орокский'
             }
         },
         en: {
@@ -113,7 +115,9 @@
                 mishar: 'Mishar dialect of Tatar',
                 udege: 'Udege',
                 evenki: 'Evenki',
-                belarusian: 'Belarusian'
+                belarusian: 'Belarusian',
+                italian: 'Italian',
+                uilta: 'Uilta'
             }
         }
     };
