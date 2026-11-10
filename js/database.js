@@ -60,7 +60,8 @@
                 evenki: 'Эвенкийский',
                 belarusian: 'Белорусский',
                 italian: 'Итальянский',
-                uilta: 'Орокский'
+                uilta: 'Орокский',
+                arabic: 'Арабский'
             }
         },
         en: {
@@ -117,7 +118,8 @@
                 evenki: 'Evenki',
                 belarusian: 'Belarusian',
                 italian: 'Italian',
-                uilta: 'Uilta'
+                uilta: 'Uilta',
+                arabic: 'Arabic'
             }
         }
     };
