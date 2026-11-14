@@ -61,7 +61,8 @@
                 belarusian: 'Белорусский',
                 italian: 'Итальянский',
                 uilta: 'Орокский',
-                arabic: 'Арабский'
+                arabic: 'Арабский',
+                old_norse: 'Древнеисландский'
             }
         },
         en: {
@@ -119,7 +120,8 @@
                 belarusian: 'Belarusian',
                 italian: 'Italian',
                 uilta: 'Uilta',
-                arabic: 'Arabic'
+                arabic: 'Arabic',
+                old_norse: 'Old Norse'
             }
         }
     };
