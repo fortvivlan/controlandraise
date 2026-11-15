@@ -62,7 +62,8 @@
                 italian: 'Итальянский',
                 uilta: 'Орокский',
                 arabic: 'Арабский',
-                old_norse: 'Древнеисландский'
+                old_norse: 'Древнеисландский',
+                even: 'Эвенский'
             }
         },
         en: {
@@ -121,7 +122,8 @@
                 italian: 'Italian',
                 uilta: 'Uilta',
                 arabic: 'Arabic',
-                old_norse: 'Old Norse'
+                old_norse: 'Old Norse',
+                even: 'Even'
             }
         }
     };
