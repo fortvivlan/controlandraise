@@ -63,7 +63,8 @@
                 uilta: 'Орокский',
                 arabic: 'Арабский',
                 old_norse: 'Древнеисландский',
-                even: 'Эвенский'
+                even: 'Эвенский',
+                khakas: 'Хакасский'
             }
         },
         en: {
@@ -123,7 +124,8 @@
                 uilta: 'Uilta',
                 arabic: 'Arabic',
                 old_norse: 'Old Norse',
-                even: 'Even'
+                even: 'Even',
+                khakas: 'Khakas'
             }
         }
     };
